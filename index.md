@@ -68,7 +68,7 @@ Support materials:
 
 * **Part II**: Open-source QGIS (Frew)
 
-[Week 2](/wk2) has a tight schedule.
+[Week 2](./wk2) has a tight schedule.
 
 <a name="wk3"></a>
 ### Week 3, Oct 17: Extending ArcGIS with InVEST Ecosystem Services (Wedding)
