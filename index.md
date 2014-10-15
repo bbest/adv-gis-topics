@@ -90,7 +90,7 @@ Support materials:
 * **Lab 4**: Species Distribution Modeling Lab using MGET
 
 <a name="wk5"></a>
-### Week 5, Oct 31: Publshing Maps Online & Final Project (Frew; Best; Wedding)
+### Week 5, Oct 31: Publshing Maps Online (Frew; Best; Wedding)
 
 * **Lecture 5**: Introduction to Online GIS
     * ArcGIS Online
