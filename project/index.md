@@ -41,7 +41,7 @@ Recall lab 1's use of [markdown](https://rawgit.com/ucsb-bren/esm296-4f/master/w
 
 Let's say you want to include an image myspecies.png located in the same folder as this projects/README.md. Then you would include the following line.
 
-```markdown
+```
 ![](myspecies.png)
 ```
 
