@@ -25,7 +25,7 @@ toc: true
 
 8:50 - 9:10 [Reorganize](./reorg.html) files
 
-9:10 - 10:00 [Review](../wk1/lab1.html#review), [Python](https://rawgit.com/ucsb-bren/esm296-4f/master/wk2/python.html) programming
+9:10 - 10:00 [Lab 1: review](../wk1/lab1.html#review), [Lab 2: Python Programming](./python.html) programming
 
 10:00 - 11:00 [QGIS](./QGIS.html)
 
@@ -43,7 +43,7 @@ toc: true
 
 - [Resources](resources.Rmd)
 
-### Cheat sheets
+## Cheat sheets
 
 - [git](cheatsheets/git_cheatsheet.pdf?raw=true)
 - [Python](cheatsheets/python_cheat_sheet.pdf)
