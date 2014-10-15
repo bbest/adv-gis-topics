@@ -43,7 +43,7 @@ The **final group project** is **100 points total** and a Project Proposal is du
 ## Course Outline
 
 <a name="wk1"></a>
-### Week 1, Oct 3: Course Intro & Programming in ArcGIS (Best; Frew)
+### Week 1, Oct 3: Course Intro & Advanced Model Builder (Best; Frew)
 
 * Course Intro - Weekly lab topics, final project & grading
     * slides ([PDF](https://purl.org/net/frew/ESM296/course_intro_slides.pdf))
