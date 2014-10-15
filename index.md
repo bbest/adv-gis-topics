@@ -109,4 +109,4 @@ For the final group project assignment, you will submit a written report based o
 * **Species distribution modeling**
     * Pick a species, identify observations available through GBIF (map of locations for the chosen spp).
 
-For more details on submitting your project proposal, see [project/README.md](project/README.md)
+For more details on submitting your project proposal, see [project](./project)

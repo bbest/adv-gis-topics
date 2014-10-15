@@ -68,7 +68,7 @@ I recommend placing this in `H:\esm296-4f\labs`, right clicking 7-Zip > Extract 
 
 In Windows Explorer, navigate to `H:\esm296-4f\github` and double-click on the github R project file to launch RStudio with that project loaded.
 
-Unfortunately the configuration settings in Rstudio that you set in the [wk1/git](https://rawgit.com/ucsb-bren/esm296-4f/master/wk1/git.html#configure-rstudio) do not seem to transfer between machines. The only setting you really need to apply is 
+Unfortunately the configuration settings in Rstudio that you set in the [wk1/git](../wk1/git.html#configure-rstudio) do not seem to transfer between machines. The only setting you really need to apply is 
 
 RStudio menu Tools > Global Options > Git/SVN > Git executable: Browse... and paste `C:\Program Files (x86)\Git\bin\git.exe` to look like this:
 
@@ -491,13 +491,13 @@ Repeat with Delete contents, Check syntax, Close ArcMap steps as above before ru
 
 ## Turn in Report
 
-Based on the output countries from your script, produce a similar [map](https://rawgit.com/ucsb-bren/esm296-4f/master/wk1/lab1.html#create-map-of-countries-wind-production) and markdown [report](https://rawgit.com/ucsb-bren/esm296-4f/master/wk1/lab1.html#report-in-markdown) as lab1 but now for offshore wind and at `H:\esm296-4f\github\lab2\README.md` with:
+Based on the output countries from your script, produce a similar [map](../wk1/lab1.html#create-map-of-countries-wind-production) and markdown [report](../wk1/lab1.html#report-in-markdown) as lab1 but now for offshore wind and at `H:\esm296-4f\github\lab2\README.md` with:
 
 - map of EEZ colored by max (no need to do the model builder images)
 - top 3 countries by max and mean
 - link to your final wind_script.py script
 
-When you [commit](https://rawgit.com/ucsb-bren/esm296-4f/master/wk1/lab1.html#git-commit-and-push-from-rstudio) this README use the message to close your lab 2 issue (or visit the issue and close it seperately).
+When you [commit](../wk1/lab1.html#git-commit-and-push-from-rstudio) this README use the message to close your lab 2 issue (or visit the issue and close it seperately).
 
 # Review
 
