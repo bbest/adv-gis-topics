@@ -1,4 +1,15 @@
-# QGIS
+---
+layout: article
+title: "QGIS"
+excerpt: "open-source GIS"
+image:
+  feature:
+  teaser:
+  thumb:
+share: false
+ads: false
+toc: true
+---
 
 We will walk (OK, run, like we were being chased by velociraptors) through the following lessons in the [QGIS Training Manual](http://docs.qgis.org/2.2/en/docs/training_manual/)
 

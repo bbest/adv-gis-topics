@@ -23,13 +23,13 @@ toc: true
 
 - [Project proposals](../project)
 
-8:50 - 9:10 [Reorganize](https://rawgit.com/ucsb-bren/esm296-4f/master/wk2/reorg.html) files
+8:50 - 9:10 [Reorganize](./reorg.html) files
 
-9:10 - 10:00 [Review](https://rawgit.com/ucsb-bren/esm296-4f/master/wk1/lab1.html#review), [Python](https://rawgit.com/ucsb-bren/esm296-4f/master/wk2/python.html) programming
+9:10 - 10:00 [Review](../wk1/lab1.html#review), [Python](https://rawgit.com/ucsb-bren/esm296-4f/master/wk2/python.html) programming
 
-10:00 - 11:00 [QGIS](QGIS.md)
+10:00 - 11:00 [QGIS](./QGIS.html)
 
-11:00 - 11:30 [Extra](https://rawgit.com/ucsb-bren/esm296-4f/master/wk2/extra.html) (time permitting)
+11:00 - 11:30 [Extra](./extra.html) (time permitting)
  
 ## FAQ
 
