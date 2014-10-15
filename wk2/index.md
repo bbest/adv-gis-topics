@@ -1,3 +1,16 @@
+---
+layout: article
+title: "Week 2: Python, QGIS"
+excerpt: "launch point to rest of course materials"
+image:
+  feature:
+  teaser:
+  thumb:
+share: false
+ads: false
+toc: true
+---
+
 ## Agenda
 
 8:30 - 8:50 Introductions
