@@ -51,14 +51,6 @@ toc: true
 
 We only have time to give you the briefest of introductions to Python and R in this course. Here are more resources for diving deeper.
 
-Cheat sheets
-
-- [git](references/git_cheatsheet.pdf?raw=true)
-- [Rmarkdown](https://github.com/ucsb-bren/esm296-4f/blob/master/wk1/rmarkdown_cheatsheet.pdf?raw=true)
-- [R](references/r_cheatsheet.pdf)
-- [R Spatial](http://www.maths.lancs.ac.uk/~rowlings/Teaching/UseR2012/cheatsheet.html)
-- [Python](references/python_cheat_sheet.pdf)
-
 Python tutorials
 
 - [The Python Tutorial - Python.org](https://docs.python.org/2/tutorial/): authoritative, long document
