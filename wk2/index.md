@@ -1,7 +1,7 @@
 ---
 layout: article
-title: "Week 2: Python, QGIS"
-excerpt: "launch point to rest of course materials"
+title: "Week 2"
+excerpt: "Python programming, QGIS"
 image:
   feature:
   teaser:

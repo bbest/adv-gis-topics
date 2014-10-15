@@ -1,3 +1,16 @@
+---
+layout: article
+title: "Final Project"
+excerpt: "proposal instructions"
+image:
+  feature:
+  teaser:
+  thumb:
+share: false
+ads: false
+toc: true
+---
+
 # Final Project
 
 For the final project, you can:
