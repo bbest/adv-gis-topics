@@ -15,8 +15,6 @@ toc: true
 
 nice short link to this document: <https://tinyurl.com/ESM296>
 
-you wish...
-
 ## Venue
 
 Fridays, 03&ndash;31 October 2014 (5 weeks), at 08:30&ndash;11:30, in Bren 3035 ("the GIS Lab")
