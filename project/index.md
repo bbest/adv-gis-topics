@@ -11,8 +11,6 @@ ads: false
 toc: true
 ---
 
-## Final Project
-
 For the final project, you can:
 
 1. Pick a Species
