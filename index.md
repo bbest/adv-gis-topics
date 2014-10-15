@@ -3,6 +3,7 @@ layout: home
 permalink: /
 image:
   feature: terrain_1600x800.jpg
+toc: true
 ---
 
 Nice short link to this page: <https://tinyurl.com/ESM296>
@@ -41,7 +42,8 @@ The **final group project** is **100 points total** and a Project Proposal is du
 
 ## Course Outline
 
-### Friday, October 3 - Course Intro & Programming in ArcGIS (Best; Frew)
+<a name="wk1"></a>
+### Week 1, Oct 3: Course Intro & Programming in ArcGIS (Best; Frew)
 
 * Course Intro - Weekly lab topics, final project & grading
     * slides ([PDF](https://purl.org/net/frew/ESM296/course_intro_slides.pdf))
@@ -59,8 +61,8 @@ Support materials:
 - [git](./wk1/git.html)
 - [rmarkdown_cheatsheet](./wk1/rmarkdown_cheatsheet.pdf)
 
-
-### Friday, October 10 - Open-source GIS (Best; Frew)
+<a name="wk2"></a>
+### Week 2, Oct 10: Python Programming and Open-Source QGIS (Best; Frew)
 
 * **Part I**: Python programming (Best)
 
@@ -68,7 +70,8 @@ Support materials:
 
 [Week 2](wk2/README.md) has a tight schedule.
 
-### Friday, October 17 - Extending ArcGIS with InVEST (Wedding)
+<a name="wk3"></a>
+### Week 3, Oct 17: Extending ArcGIS with InVEST Ecosystem Services (Wedding)
 
 * **Lecture 3a**: Guest speaker (Natural Capital Project staff) Introduction to ecosystem service evaluation theory and practice using InVEST (Integrated Valuation of Environmental Services and Tradeoffs)
 * **Lecture 3b**: Introduction to InVEST applications, CA case study example and review for Coastal Vulnerability Modeling lab
@@ -76,7 +79,8 @@ Support materials:
     * Background on Python
 * **Lab 3**: Coastal Vulnerability Modeling using InVEST
 
-### Friday, October 24 - Extending ArcGIS with MGET (Best; Wedding)
+<a name="wk4"></a>
+### Week 4, Oct 24: Extending ArcGIS with MGET Species Distribution Modeling (Best; Wedding)
 
 * **Lecture 4a**: Guest speaker (Larry Crowder) Spatial ecological analysis and OBIS SEAMAP (Spatial Ecological Analysis of Megavertebrate Animal Populations)
 * **Lecture 4b**: Introduction to MGET (Marine Geospatial Ecology Tools) applications, CA case study example and review for Species Distribution Modeling Lab
@@ -85,7 +89,8 @@ Support materials:
     * ArcPy
 * **Lab 4**: Species Distribution Modeling Lab using MGET
 
-### Friday, October 31 - Online GIS & Final Project (Frew; Best; Wedding)
+<a name="wk5"></a>
+### Week 5, Oct 31: Publshing Maps Online & Final Project (Frew; Best; Wedding)
 
 * **Lecture 5**: Introduction to Online GIS
     * ArcGIS Online
@@ -93,7 +98,8 @@ Support materials:
     * Leaflet Mapper
 * **Lab 5**: ArcGIS Online Lab and Final Project Support
 
-## Final Group Project Instructions
+<a name="proj"></a>
+## Final Group Project
 
 For the final group project assignment, you will submit a written report based on analysis with a geospatial tool, introduced in ESM 296-4F, in the following topical areas:
 
@@ -104,4 +110,3 @@ For the final group project assignment, you will submit a written report based o
     * Pick a species, identify observations available through GBIF (map of locations for the chosen spp).
 
 For more details on submitting your project proposal, see [project/README.md](project/README.md)
-

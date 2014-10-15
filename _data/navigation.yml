@@ -1,9 +1,35 @@
 # Site navigation links
 
-- title: Syllabus
-  url: /syllabus.html
-  excerpt: "Launch pad to rest of course material"
+- title: "wk1"
+  url: /#wk1
+  excerpt: "Course Intro & Programming in ArcGIS"
   image: 400x250.gif
+
+- title: "wk2"
+  url: /#wk2
+  excerpt: "Python Programming and Open-Source QGIS"
+  image: 400x250.gif
+
+- title: "wk3"
+  url: /#wk3
+  excerpt: "Extending ArcGIS with InVEST Ecosystem Services"
+  image: 400x250.gif
+
+- title: "wk4"
+  url: /#wk4
+  excerpt: "Extending ArcGIS with MGET Species Distribution Modeling"
+  image: 400x250.gif
+
+- title: "wk5"
+  url: /#wk5
+  excerpt: "Publshing Maps Online"
+  image: 400x250.gif
+
+- title: "project"
+  url: /#proj
+  excerpt: "Final Project"
+  image: 400x250.gif
+
 
 #- title: Sample Articles
 #  url: /articles/
