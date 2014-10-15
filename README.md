@@ -1,0 +1,6 @@
+esm296-4f
+=========
+
+Advanced Topics in GIS
+
+Please visit http://ucsb-bren.github.io/esm296-4f for the rendered course content.
