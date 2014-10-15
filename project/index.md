@@ -11,7 +11,7 @@ ads: false
 toc: true
 ---
 
-# Final Project
+## Final Project
 
 For the final project, you can:
 
