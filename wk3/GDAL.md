@@ -1,7 +1,7 @@
 ---
 layout: home
-title: "GDAL"
-excerpt: "open-source Geospatial Data Abstraction Language"
+title: "Clipping and projecting with GDAL"
+excerpt:
 image:
   feature:
   teaser:
