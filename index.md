@@ -75,9 +75,9 @@ Support materials:
 
 * **Lecture 3a**: Guest speaker (Natural Capital Project staff) Introduction to ecosystem service evaluation theory and practice using InVEST (Integrated Valuation of Environmental Services and Tradeoffs)
 * **Lecture 3b**: Introduction to InVEST applications, CA case study example and review for Coastal Vulnerability Modeling lab
-    * InVEST
+    * [InVEST](./wk3/INVEST_UCSB_lmw_week3.pdf)
     * Background on Python
-* **Lab 3**: Coastal Vulnerability Modeling using InVEST
+* **Lab 3**: Coastal Vulnerability Modeling using InVEST <!--[Coastal Vulnerability Modeling using InVEST](./wk3/ESM296-4F_CoastalVulnerabilityModelingInVEST_GISLab.pdf)-->
     * [Clipping and projecting with GDAL](./wk3/GDAL.html)
 
 <a name="wk4"></a>
