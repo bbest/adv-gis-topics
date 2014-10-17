@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: home
 title: "GDAL"
 excerpt: "open-source Geospatial Data Abstraction Language"
 image:
@@ -8,7 +8,7 @@ image:
   thumb:
 share: false
 ads: false
-toc: false
+toc: true
 ---
 
 # Clipping and projecting with GDAL
