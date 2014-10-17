@@ -70,13 +70,16 @@ Oops. The data to be clipped (`global_polygon`) is in a different projection fro
     19922312	InVEST_CV/continentalShelf.shp
     161500092	InVEST_CV/global_polygon.shp
 
-Yikes. `InVEST_CV/global_polygon.shp` is like 400,000 times larger than `InVEST_CV/AOI_BarkClay.shp`. We'll project `InVEST_CV/AOI_BarkClay.shp`, using `ogr2ogr`:
-([manual page](http://www.gdal.org/ogr2ogr.html)):
+Yikes. `InVEST_CV/global_polygon.shp` is like 400,000 times larger than `InVEST_CV/AOI_BarkClay.shp`. We'll project `InVEST_CV/AOI_BarkClay.shp`, using `ogr2ogr` ([manual page](http://www.gdal.org/ogr2ogr.html)):
 
     $ ogr2ogr -t_srs EPSG:4326 aoi.shp InVEST_CV/AOI_BarkClay.shp
 
-> Note: 
+> Note: the input/output file order in ogr2ogr is **backwards** from normal commands. In the example above, `aoi.shp` is the *output* file, and `InVEST_CV/AOI_BarkClay.shp` is the *input* file.
+>
+> Yes, they *are* doing this just to annoy you...
 
 OK, now you can use QGIS's Vector&rarr;Geoprocessing Tools&rarr;Clip tool to clip `global_polygon`, using `roi` as the clip layer. Or, you can do it with `ogr2ogr`:
 
     $ ogr2ogr -clipdst aoi.shp clip.shp InVEST_CV/global_polygon.shp
+
+Here, `clip.shp` is the output file.
