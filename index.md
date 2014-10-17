@@ -74,10 +74,10 @@ Support materials:
 ### Week 3, Oct 17: Extending ArcGIS with InVEST Ecosystem Services (Wedding)
 
 * **Lecture 3a**: Guest speaker (Natural Capital Project staff) Introduction to ecosystem service evaluation theory and practice using InVEST (Integrated Valuation of Environmental Services and Tradeoffs)
-* **Lecture 3b**: Introduction to InVEST applications, CA case study example and review for Coastal Vulnerability Modeling lab
-    * [InVEST](./wk3/INVEST_UCSB_lmw_week3.pdf)
+* **Lecture 3b**: [Introduction to InVEST applications, CA case study example and review for Coastal Vulnerability Modeling lab](./wk3/INVEST_UCSB_lmw_week3.pdf)
+    * InVEST
     * Background on Python
-* **Lab 3**: Coastal Vulnerability Modeling using InVEST <!--[Coastal Vulnerability Modeling using InVEST](./wk3/ESM296-4F_CoastalVulnerabilityModelingInVEST_GISLab.pdf)-->
+* **Lab 3**: Coastal Vulnerability Modeling using InVEST
     * [Clipping and projecting with GDAL](./wk3/GDAL.html)
 
 <a name="wk4"></a>
