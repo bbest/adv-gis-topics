@@ -28,7 +28,7 @@ Type or copy the following text into *Notepad++*:
 
     export PATH="$PATH:/c/Program Files/QGIS Chugiak/bin"
 
-> `PATH` tells *bash* which folders to look in to find the commands that you tell it to run. We're telling *bash* to look in the folder containing the *QGIS* commands, in addtion to all the other folders it would usually look in. 
+> `PATH` tells *bash* which folders to look in to find the commands that you tell it to run. We're telling *bash* to look in the folder containing the *QGIS* commands, in addtion to all the other folders (`$PATH`) it would usually look in. 
 
 Save `.bash_profile` and quit *Notepad++*
 
