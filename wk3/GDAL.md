@@ -1,7 +1,7 @@
 ---
-layout: article
-title: "GDAL"
-excerpt: "open-source Geospatial Data Abstraction Language"
+layout: home
+title:
+excerpt:
 image:
   feature:
   teaser:
