@@ -22,13 +22,13 @@ This will make sure you're working in your home directory (i.e. your `H:` drive)
 
 Don't forget the initial `.` in `.bash_profile`: it's part of the name.
  
-> Filenames beginning with `.` aren't displayed by the `ls` command (unless you specify the `-a` option.) It's a UNIX convention to use names beginning with `.` for files containing command-specific configuration or logging information. `.bash_profile` contains commands that `bash` runs whenever it start up.
+> Filenames beginning with `.` aren't displayed by the `ls` command (unless you specify the `-a` option.) It's a UNIX convention to use names beginning with `.` for files containing command-specific configuration or logging information. `.bash_profile` contains commands that *bash* runs whenever it start up.
 
 Type or copy the following text into *Notepad++*:
 
     export PATH="$PATH:/c/Program Files/QGIS Chugiak/bin"
 
-> `PATH` tells `bash` which folders to look in to find the commands that you tell it to run. We're telling `bash` to look in the folder containing the *QGIS* commands, in addtion to all the other folders it would usually look in. 
+> `PATH` tells *bash* which folders to look in to find the commands that you tell it to run. We're telling *bash* to look in the folder containing the *QGIS* commands, in addtion to all the other folders it would usually look in. 
 
 Save `.bash_profile` and quit *Notepad++*
 
@@ -120,7 +120,7 @@ Let's look at the script line by line (more or less...):
 
     set -x
     
-This tells `bash` to "echo" (type out in the *bash* window) each command before it's run. This is helpful so you can see what's going on, and in particular so you can tell how far a script got before it failed.
+This tells *bash* to "echo" (type out in the *bash* window) each command before it's run. This is helpful so you can see what's going on, and in particular so you can tell how far a script got before it failed.
 
 > *bash* uses `#` to indicate a comment, just like Python. Everything from a `#` to the end of the line is ignored when the script is run.
 
@@ -149,9 +149,9 @@ Note also that the value of `clip_args` uses the previously-defined variable `ro
     ...
     done
 
-This is a **bash** loop, almost identical to a `for` loop in Python. The loop executes as many times as there are words in `$rasters`, with the value of `file` set to each word successively. In this case, the loop executes twice, once with `file=global_pop` and once with `file=claybark_dem`.
+This is a *bash* `for` loop, almost identical to a `for` loop in Python. The loop executes as many times as there are words in `$rasters`, with the value of `file` set to each word successively. In this case, the loop executes twice, once with `file=global_pop` and once with `file=claybark_dem`.
 
-> Note: Unlike Python, indentation doesn't matter in bash scripts. The indentation in this script is solely to make it easier for you to read (a **highly** recommended practice.)
+> Note: Unlike Python, indentation doesn't matter in *bash* scripts. The indentation in this script is solely to make it easier for you to read (a **highly** recommended practice.)
 
 `gdalwarp` is GDAL's all-purpose spatial transformer. It can do subsetting, re-projection, and a bunch of other stuff; see the [gdalwarp manual page](http://www.gdal.org/gdalwarp.html) for details. First, we'll use it to clip the input ArcGIS grid file to the outline of our region-of-interest, also convert it from grid to GeoTIFF format:
 
@@ -159,7 +159,7 @@ This is a **bash** loop, almost identical to a `for` loop in Python. The loop ex
 
 > GeoTIFF is a portable (non-proprietary) raster format that's much more suited to open-source processing than the proprietary ESRI grid format.
 
-Note the `{}`s in `${file}_wgs84.tif`: they tell bash that only part of the character sequence `file_wgs84.tif` is a variable name. We use this trick a lot to construct filenames with a common prefix but different suffixes.
+Note the `{}`s in `${file}_wgs84.tif`: they tell *bash* that only part of the character sequence `file_wgs84.tif` is a variable name. We use this trick a lot to construct filenames with a common prefix but different suffixes.
 
 Second, we'll use `gdalwarp` to re-project the clipped raster from WGS 84 geographic coordinates into WGS 84 UTM zone 10N projected coordinates.
 
