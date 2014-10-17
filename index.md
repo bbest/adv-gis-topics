@@ -78,6 +78,7 @@ Support materials:
     * InVEST
     * Background on Python
 * **Lab 3**: Coastal Vulnerability Modeling using InVEST
+    * [Clipping and projecting with GDAL](./wk3/GDAL.md)
 
 <a name="wk4"></a>
 ### Week 4, Oct 24: Extending ArcGIS with MGET Species Distribution Modeling (Best; Wedding)
