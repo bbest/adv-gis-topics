@@ -77,7 +77,7 @@ Support materials:
 * **Lecture 3b**: [Introduction to InVEST applications, CA case study example and review for Coastal Vulnerability Modeling lab](./wk3/INVEST_UCSB_lmw_week3.pdf)
     * InVEST
     * Background on Python
-* **Lab 3**: Coastal Vulnerability Modeling using InVEST
+* **Lab 3**: [Coastal Vulnerability Modeling using InVEST](./wk3/ESM296-4F_CoastalVulnerabilityModelingInVEST_GISLab.pdf)
     * [Clipping and projecting with GDAL](./wk3/GDAL.html)
 
 <a name="wk4"></a>
