@@ -116,7 +116,7 @@ OK, what did we just do?
 
 We copied a bunch of *bash* commands into `pre.sh` and made it executable as a command. If we run `pre.sh` as a command (which we will in a minute), it will run all of the commands it contains, one after another.
 
-Specifically, here's what will happen:
+Let's look at the script line by line (more or less...):
 
     set -x
     
@@ -213,7 +213,7 @@ Second, we'll use `gdalwarp` to re-project the clipped raster from WGS 84 geogra
         STATISTICS_MINIMUM=0
         STATISTICS_STDDEV=138.79254699282
 
-> The `-norat` option keeps `gdalinfo` from printing a whole bunch more detail that we don't need; see the [gdalinfo manual page](http://www.gdal.org/gdalinfo.html) for details. `gdalinfo` is a very handy command for finding out what's up with mystery data.
+> The `-norat` option keeps `gdalinfo` from printing a whole bunch more detail that we don't need; see the [gdalinfo manual page](http://www.gdal.org/gdalinfo.html) for details. `gdalinfo` is a very handy command for finding out what's up with mystery data. (Yes, there's a corresponding `ogrinfo` for vector data; see the [manual page](http://www.gdal.org/ogrinfo.html))
 
 OK, enough with the exegesis. Let's run the sucker:
 
