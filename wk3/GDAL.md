@@ -8,7 +8,7 @@ image:
   thumb:
 share: false
 ads: false
-toc: true
+toc: false
 ---
 
 # Clipping and projecting with GDAL
