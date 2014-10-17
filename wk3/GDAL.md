@@ -1,6 +1,6 @@
 ---
 layout: home
-title: "Clipping and projecting with GDAL"
+title:
 excerpt:
 image:
   feature:
