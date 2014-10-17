@@ -74,7 +74,7 @@ Yikes. `InVEST_CV/global_polygon.shp` is like 400,000 times larger than `InVEST_
 
     $ ogr2ogr -t_srs EPSG:4326 aoi.shp InVEST_CV/AOI_BarkClay.shp
 
-> Note: the input/output file order in ogr2ogr is **backwards** from normal commands. In the example above, `aoi.shp` is the *output* file, and `InVEST_CV/AOI_BarkClay.shp` is the *input* file.
+> Note: the input/output file order in `ogr2ogr` is **backwards** from normal commands. In the example above, `aoi.shp` is the *output* file, and `InVEST_CV/AOI_BarkClay.shp` is the *input* file.
 >
 > Yes, they *are* doing this just to annoy you...
 
