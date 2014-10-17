@@ -1,3 +1,16 @@
+---
+layout: article
+title: "GDAL"
+excerpt: "open-source Geospatial Data Abstraction Language"
+image:
+  feature:
+  teaser:
+  thumb:
+share: false
+ads: false
+toc: true
+---
+
 # Clipping and projecting with GDAL
 
 *QGIS*, like most open-source GIS software, uses the [GDAL (Geospatial Data Abstraction Library)](http://www.gdal.org/) software package to implement a lot of what ArcGIS would call "tools" or "geoprocessing". All of the GDAL functionality is also accessible as *bash* commands.
