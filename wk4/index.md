@@ -18,7 +18,9 @@ toc: true
 * **Lecture 4b**: Introduction to MGET (Marine Geospatial Ecology Tools) applications, CA case study example and review for Species Distribution Modeling Lab
     * Best
     
-* **Lab 4**: Species Distribution Modeling Lab using MGET <!-- [Species Distribution Modeling Lab using MGET](https://purl.org/net/frew/ESM296/wk4/ESM296-4F_SppDistModelingGISLab.pdf) -->
+* **Lab 4**: Species Distribution Modeling Lab using MGET
+
+<!-- [Species Distribution Modeling Lab using MGET](https://purl.org/net/frew/ESM296/wk4/ESM296-4F_SppDistModelingGISLab.pdf) -->
 
 
 ## Resources for Final Projects on Species Distribution Modeling

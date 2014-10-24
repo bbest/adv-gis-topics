@@ -86,10 +86,9 @@ Support materials:
 ### Week 4, Oct 24: Extending ArcGIS with MGET Species Distribution Modeling (Best; Wedding)
 
 * **Lecture 4a**: Guest speaker (Larry Crowder) Spatial ecological analysis and OBIS SEAMAP (Spatial Ecological Analysis of Megavertebrate Animal Populations)
+
 * **Lecture 4b**: Introduction to MGET (Marine Geospatial Ecology Tools) applications, CA case study example and review for Species Distribution Modeling Lab
-    * MGET
-    * Background on R, Matlab, Python
-    * ArcPy
+
 * **Lab 4**: Species Distribution Modeling Lab using MGET
 
 <a name="wk5"></a>
