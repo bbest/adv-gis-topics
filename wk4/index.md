@@ -19,12 +19,6 @@ toc: true
 
 - **Lecture 4c**: [MGET Applications: Spatially Predictive Modeling & Mapping of Rockfishes](https://purl.org/net/frew/ESM296/wk4/SppDistModelingLab.pdf) (Wedding)
     
-- **Lab 4**: Species Distribution Modeling Lab using MGET
-
-More links and content to be posted momentarily, after Larry's lecture.
-
-<!-- 
-
 - **Lab 4**: [Species Distribution Modeling Lab using MGET](https://purl.org/net/frew/ESM296/wk4/ESM296-4F_SppDistModelingGISLab.pdf)
 
     - data: [Week4Data.7z](https://purl.org/net/frew/ESM296/wk4/Week4Data.7z)
@@ -68,4 +62,3 @@ More links and content to be posted momentarily, after Larry's lecture.
 - Zuur AF, EN Ieno, & CS Elphick (2010) [A protocol for data exploration to avoid common statistical problems](
 https://purl.org/net/frew/ESM296/wk4/refs/Zuur_etal_2009.pdf). Methods in Ecology and Evolution, 1(1):3–14.
 
--->
