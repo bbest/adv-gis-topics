@@ -21,18 +21,19 @@ toc: true
     
 - **Lab 4**: Species Distribution Modeling Lab using MGET
 
+## <!-- COMMENTING BELOW -->
+
 - **Lab 4**: [Species Distribution Modeling Lab using MGET](https://purl.org/net/frew/ESM296/wk4/ESM296-4F_SppDistModelingGISLab.pdf)
 
     - data: [Week4Data.7z](https://purl.org/net/frew/ESM296/wk4/Week4Data.7z)
 
 ## Resources for Final Projects on SDM
 
-### R Scripts:
+### R Script
 
-- 
+- [get_species.R](https://github.com/ucsb-bren/esm296-4f/blob/gh-pages/wk4/get_species.R) - download species observations from [gbif.org]() (Global Biodiversity Information Facility) and create shapefile of points
 
-
-### Data sources:
+### Data sources
 
 - Terrestrial
 
