@@ -23,7 +23,9 @@ toc: true
 
 - **Lab 4**: [Species Distribution Modeling Lab using MGET](https://purl.org/net/frew/ESM296/wk4/ESM296-4F_SppDistModelingGISLab.pdf)
 
-## Resources for Final Projects on Species Distribution Modeling
+    - data: [Week4Data.7z](https://purl.org/net/frew/ESM296/wk4/Week4Data.7z)
+
+## Resources for Final Projects on SDM
 
 ### R Scripts:
 
@@ -48,14 +50,14 @@ toc: true
 
 ## References
 
-Elith_Leathwick_2009.pdf
-Guisan_Zimmermann_2000.pdf
-Pearson_2007.pdf
+- Elith J, & JR Leathwick (2009). [Species Distribution Models: Ecological Explanation and Prediction Across Space and Time](https://purl.org/net/frew/ESM296/wk4/refs/Elith_Leathwick_2009.pdf). _Annual Review of Ecology, Evolution, and Systematics_, 40(1): 677–697.
 
-- Roberts, JJ, BD Best, DC Dunn, EA Treml, PN Halpin (2010) Marine Geospatial Ecology Tools: An integrated framework for ecological geoprocessing with ArcGIS, Python, R, MATLAB, and C++. _Environmental Modelling & Software_, **25**(10): 1197–1207. [[pdf](https://purl.org/net/frew/ESM296/wk4/refs/Roberts_et_al_2010_MGET.pdf)]
+- Pearson RG (2007). [Species’ Distribution Modeling for Conservation Educators  and Practitioners](https://purl.org/net/frew/ESM296/wk4/refs/Pearson_2007.pdf).
 
-- Young, MA, PJ Iampietro, RG Kvitek, CD Garza (2010) Multivariate bathymetry-derived generalized linear model accurately predicts rockfish distribution on Cordell Bank, California, USA. _Marine Ecology-Progress Series_, **415**: 247–261. [[pdf](https://purl.org/net/frew/ESM296/wk4/Young_et_al_2010_rockfish_GLM_MGET.pdf)]
+- Roberts JJ, BD Best, DC Dunn, EA Treml, & PN Halpin (2010) [Marine Geospatial Ecology Tools: An integrated framework for ecological geoprocessing with ArcGIS, Python, R, MATLAB, and C++](https://purl.org/net/frew/ESM296/wk4/refs/Roberts_et_al_2010_MGET.pdf). _Environmental Modelling & Software_, 25(10): 1197–1207.
 
-Roberts_etal_2010.pdf
-Young_etal_2010.pdf
-Zuur_etal_2009.pdf
+- Young MA, PJ Iampietro, RG Kvitek, & CD Garza (2010) [Multivariate bathymetry-derived generalized linear model accurately predicts rockfish distribution on Cordell Bank, California, USA](https://purl.org/net/frew/ESM296/wk4/refs/Young_et_al_2010_rockfish_GLM_MGET.pdf). _Marine Ecology-Progress Series_, 415: 247–261.
+
+- Zuur AF, EN Ieno, & CS Elphick (2010). [A protocol for data exploration to avoid common statistical problems](
+https://purl.org/net/frew/ESM296/wk4/refs/Zuur_etal_2009.pdf). Methods in Ecology and Evolution, 1(1), 3–14. doi:10.1111/j.2041-210X.2009.00001.x
+
