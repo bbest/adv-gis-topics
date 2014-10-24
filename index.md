@@ -91,9 +91,7 @@ Support materials:
 
 * **Lab 4**: Species Distribution Modeling Lab using MGET
 
-<!--
-See [wk4](./wk4/) for details.
--->
+See [**wk4** details](./wk4/).
 
 <a name="wk5"></a>
 ### Week 5, Oct 31: Publshing Maps Online (Frew; Best; Wedding)

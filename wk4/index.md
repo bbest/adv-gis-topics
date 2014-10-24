@@ -21,7 +21,7 @@ toc: true
     
 - **Lab 4**: Species Distribution Modeling Lab using MGET
 
-## <!-- COMMENTING BELOW -->
+<!-- 
 
 - **Lab 4**: [Species Distribution Modeling Lab using MGET](https://purl.org/net/frew/ESM296/wk4/ESM296-4F_SppDistModelingGISLab.pdf)
 
@@ -66,6 +66,4 @@ toc: true
 - Zuur AF, EN Ieno, & CS Elphick (2010) [A protocol for data exploration to avoid common statistical problems](
 https://purl.org/net/frew/ESM296/wk4/refs/Zuur_etal_2009.pdf). Methods in Ecology and Evolution, 1(1):3–14.
 
-
-
-Robert J. 
+-->
