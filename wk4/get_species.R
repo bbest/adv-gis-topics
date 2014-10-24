@@ -7,7 +7,7 @@ genus   = 'Megaptera'
 species = 'novaeangliae'
 
 # path to output shapefile constructed from scientific name of your speciess
-shp     = sprintf('H:/esm296-4f/project/data/gbif_%s_%s', genus, species)
+shp = sprintf('H:/esm296-4f/project/data/gbif_%s_%s', genus, species)
 
 # get data from Global Biodiversity Information Facility (GBIF)
 sp = gbif(genus, species, sp=T, removeZeros=T)
