@@ -21,6 +21,8 @@ toc: true
     
 - **Lab 4**: Species Distribution Modeling Lab using MGET
 
+More links and content to be posted momentarily, after Larry's lecture.
+
 <!-- 
 
 - **Lab 4**: [Species Distribution Modeling Lab using MGET](https://purl.org/net/frew/ESM296/wk4/ESM296-4F_SppDistModelingGISLab.pdf)
