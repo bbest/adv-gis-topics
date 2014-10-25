@@ -59,7 +59,7 @@ Visit the course site and refresh your browser to see the latest lecture and lab
 
 ## Turning in Homework via Github Issue
 
-Issues are created at the beginning of the course in the following exact sequence (so instructors can visit them with known URLs). Closing the given issue notifies us that you're done with the assignment. This issue can also be a forum by which you ask the instructor(s) any questions in private related to the assignment.
+Issues are created at the beginning of the course in the following exact sequence (so instructors can visit them with known URLs). Closing the given issue notifies us that you're done with the assignment. You can also add a comment to a given issue to address instructor(s) by their Github username with the "@" prefix (ie @bbest, @jamesfrew or @lwedding) to ask any questions in private related to the assignment.
 
 1. setup github
 1. project proposal

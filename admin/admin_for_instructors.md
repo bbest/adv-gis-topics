@@ -19,8 +19,6 @@ Place all input data files into a folder "raw", and [7-zip](http://www.7-zip.org
 
 Create lab#.md in relevant wk#/ folder of https://github.com/ucsb-bren/esm296-4f. Link to lab#.md from /index.md and/or /wk#/index.md.
 
-While the # associated with a lab is always the same as the homework (hw) students are to turn in, a lab could span more than one week so wk # could be offset.
-
 - /**index.md** contains course syllabus
 
     - **wk#**/ contains each week's of material
@@ -31,6 +29,7 @@ While the # associated with a lab is always the same as the homework (hw) studen
         
         - **img**/ folder contains all images referenced by lab or lecture files
         
+While the # associated with a lab is always the same as the homework (hw) students are to turn in, a lab could span more than one week so wk # could be offset.
 
 ## Markdown
 
