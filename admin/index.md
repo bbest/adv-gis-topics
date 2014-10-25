@@ -62,18 +62,11 @@ Visit the course site and refresh your browser to see the latest lecture and lab
 Issues are created at the beginning of the course in the following exact sequence (so instructors can visit them with known URLs). Closing the given issue notifies us that you're done with the assignment. This issue can also be a forum by which you ask the instructor(s) any questions in private related to the assignment.
 
 1. setup github
-
 1. project proposal
-
 1. hw1
-
 1. hw2
-
 1. hw3
-
 1. hw4
-
 1. hw5
-
 1. final project
 
