@@ -63,7 +63,7 @@ You can [Get shareable link](http://googledrive.blogspot.com/2014/09/sharingupda
 
 ## Github.com for Code
 
-Github does a nice job syntax highlighting code, so you can still place them in a given wk# folder and then link to the absolute github.com URL, eg [`https://github.com/ucsb-bren/esm296-4f/blob/gh-pages/wk4/get_species.R`](https://github.com/ucsb-bren/esm296-4f/blob/gh-pages/wk4/get_species.R), or embed [markdown blockcode for syntax highlighting](https://help.github.com/articles/github-flavored-markdown/#syntax-highlighting). For example this R code block:
+Github does a nice job syntax highlighting code, so you can still place them in a given wk# folder and then link to the absolute github.com URL, eg [`https://github.com/ucsb-bren/esm296-4f/blob/gh-pages/wk4/get_species.R`](https://github.com/ucsb-bren/esm296-4f/blob/gh-pages/wk4/get_species.R), or embed [markdown blockcode for syntax highlighting](https://help.github.com/articles/github-flavored-markdown/#syntax-highlighting). For example this R code block renders like so:
 
 ```r
 library(sp)
