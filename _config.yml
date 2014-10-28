@@ -20,8 +20,6 @@ redcarpet:
 highlighter: pygments
 gems:
   - jekyll-sitemap
-  - jekyll-coffeescript
-
 
 # Site owner
 owner:
