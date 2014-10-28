@@ -27,6 +27,8 @@ A consistent file management strategy will reduce confusion.
 
 - Delete intermediate scratch files.
 
+- Store relative paths, an option for both ArcMap documents and models.
+
 ## File Management
 
 Recommended file management scheme for `H:\esm296-4f`. There's usually a **lab** for every week (**wk**) of class instruction and associated homework (**hw**) to turn in. While the # associated with a lab is always the same as the hw turned in, a lab could span more than one week so wk # could be offset.
