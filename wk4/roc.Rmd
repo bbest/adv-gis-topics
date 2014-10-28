@@ -19,6 +19,19 @@ toc: true
 ---
 ```
 
+Receiver Operating Characteristic (ROC) Curves were first developed during WWII for tuning radios. We're going to use them to adjust the dial on our species distribution model. Let's take a look at the ROC plot from lab 4.
+
+![](glm1_diagnostic_plot_cropped.png)
+
+The two axis correspond with the accuracy of the model output, which can incur two types of errors:
+
+1. **False positives (FP)** occurs when the GLM predicts presence of the species for a given location, when in fact our validation dataset says it does NOT occur there (ie TestData=1 and presence=0). This is also known as an error of "commission", or Type I error. The False positive rate (FPR) (x axis of ROC plot above) is the number of false positives over all the known _positives_ from the training dataset (ie TestData=1 and presence=1).
+
+1. **False negatives (FN)** occurs when the GLM predicts absence of the species for a given location, when in fact our validation dataset says it does occur there (ie TestData=1 and presence=1). This is also called an error of "ommission", or Type II error. The True positive rate (TPR) (y axis of ROC plot above) is the number of false positives over all the known _negatives_ from the training dataset (ie TestData=1 and presence=0).
+
+
+
+
 
 | Tables        | Are           | Cool  |
 | ------------- |:-------------:| -----:|
