@@ -19,6 +19,12 @@ A consistent file management strategy will reduce confusion.
 
 - Create reproducible analysis with models / scripts. Any use of tools should be recorded in a model or script.
 
+    - While it's tempting and easy to simply select the available layers as inputs to your tools, it is strongly recommended to use source data from the Catalog pane as inputs whenever possible. This is because:
+    
+        1. Layers in your ArcMap document are temporary to the life of the document, hence changes in your layers may render your model later useless. And certainly the model can only be ran from within that ArcMap document, whereas if pointing to file inputs it can also run within ArcCatalog.
+        
+        1. Selected features in your layers are respected by many tools, hence only some features may have the desired function applied. It's very easy to select a row in a table or feature on a map and later be confused as to why your tool didn't seem to work, when in reality it did, just on a subset of the data.
+
 - Delete intermediate scratch files.
 
 ## File Management
