@@ -1,0 +1,96 @@
+---
+output:
+  md_document:
+    variant: markdown_github
+---
+```{r yaml, echo=FALSE, eval=FALSE}
+# have to manually add header to *.md
+---
+layout: article
+title: "Receiver Operating Characteristic (ROC) Curve"
+excerpt: "and the confusion matrix"
+image:
+  feature:
+  teaser:
+  thumb:
+share: false
+ads: false
+toc: true
+---
+```
+
+
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+
+
+
+|       |       |       predicted    |     predicted      |        rates        |
+|------:|------:|:------------------:|:------------------:|:-------------------:|
+|       |       |          1         |         0          |                     |
+| truth |    1  | true positive (TP) | false negative (FN)| TPR = TP / (TP + FN)|
+| truth |    0  | false positive (FP)| true negative (TN) | FPR = FP / (FP + TN)|
+
+- true positive rate (TPR) = true positives (TP) / all positives (truth == 1) = TP / (TP + FN)
+
+- false positive rate (FPR) = false positives (TP) / all negatives (truth == 0) = FP / (FP + TN)
+
+![](.img/roc_mapped.png)
+
+```{r lab4, echo=FALSE}
+library(foreign)
+library(dplyr)
+library(knitr)
+
+# read in attribute table of predicted observation shapefile
+dbf = './data/obs_pred.dbf' # copied from 'H:/esm296-4f/wk4/derived/obs_pred.dbf'
+d = read.dbf(dbf) %>%
+  filter(TestData==TRUE) %>%
+  select(presence, starts_with('pred_'))
+
+# iterate over cutoffs
+l = list()
+for (cutoff in c(0.1,0.3,0.7,0.9)){ # cutoff = 0.1
+  
+  fld_pred    = sprintf('pred_%02d', cutoff*10)
+  d$truth     = d$presence
+  d$predicted = d[[fld_pred]]
+  
+  l = c(l, list(d %>%
+    summarize(
+      TP = sum(predicted == 1 & truth == 1),
+      FP = sum(predicted == 1 & truth == 0),
+      TN = sum(predicted == 0 & truth == 1),
+      FN = sum(predicted == 0 & truth == 0)) %>%
+    mutate(
+      cutoff = cutoff,
+      TPR = TP / (TP + FN),
+      FPR = FP / (FP + TN))))
+}
+
+a = rbind_all(l) %>%
+  select(cutoff, TP, FP, TN, FN, TPR, FPR) %>%
+  mutate(
+    tbl = sprintf('cutoff=%0.1f\nTP=%d | FN=%d | TPR=%0.2f\nFP=%d | TN=%d | FPR=%0.2f\n', cutoff, TP, FN, TPR, FP, TN, FPR))
+cat(a$tbl, sep='\n')
+```
+
+
+cutoff=0.1
+TP=72 | FN=187 | TPR=0.28
+FP=60 | TN=5 | FPR=0.92
+
+cutoff=0.3
+TP=70 | FN=223 | TPR=0.24
+FP=24 | TN=7 | FPR=0.77
+
+cutoff=0.7
+TP=51 | FN=238 | TPR=0.18
+FP=9 | TN=26 | FPR=0.26
+
+cutoff=0.9
+TP=35 | FN=247 | TPR=0.12
+FP=0 | TN=42 | FPR=0.00
