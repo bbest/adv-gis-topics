@@ -29,7 +29,7 @@ toc: true
 
 - [get_species.R](https://github.com/ucsb-bren/esm296-4f/blob/gh-pages/wk4/get_species.R) - download species observations from [gbif.org]() (Global Biodiversity Information Facility) and create shapefile of points
 
-- BB TODO: script to create pseudo-absences
+- [create_absences.R](https://github.com/ucsb-bren/esm296-4f/blob/gh-pages/wk4/create_absences.R)
 
 ### Data sources
 
