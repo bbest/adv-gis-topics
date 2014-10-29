@@ -26,11 +26,6 @@ outer_radius_km = 100
 # output map as png for quick sanity check
 map_png = 'H:/esm296-4f/github/project/img/absence_Pinus_longaeva_map.png'
 
-# DEBUG on BB's Mac
-shp_presence = 'wk4/data/gbif_Pinus_longaeva'
-shp_absence  = 'wk4/data/absence_Pinus_longaeva'
-map_png      = 'wk4/img/absence_Pinus_longaeva_map.png'
-
 
 # create absence points ----
 

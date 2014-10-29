@@ -22,6 +22,8 @@ toc: true
 - **Lab 4**: [Species Distribution Modeling Lab using MGET](https://purl.org/net/frew/ESM296/wk4/ESM296-4F_SppDistModelingGISLab.pdf)
 
     - data: [Week4Data.7z](https://purl.org/net/frew/ESM296/wk4/Week4Data.7z)
+    
+    - [receiver operating characteristic (ROC) curves explained](./roc.html)
 
 ## Resources for Final Projects on SDM
 
@@ -29,7 +31,9 @@ toc: true
 
 - [get_species.R](https://github.com/ucsb-bren/esm296-4f/blob/gh-pages/wk4/get_species.R) - download species observations from [gbif.org]() (Global Biodiversity Information Facility) and create shapefile of points
 
-- [create_absences.R](https://github.com/ucsb-bren/esm296-4f/blob/gh-pages/wk4/create_absences.R)
+- [create_absences.R](https://github.com/ucsb-bren/esm296-4f/blob/gh-pages/wk4/create_absences.R) - create shapefile of pseudo-absence points from within buffer (specified by inner and outer rings) around shapefile of presence points. Also create map for quick sanity check. Here's the example map of created absence points (red) and buffers (blue) using presence points (green) for bristlecone pine (_Pinus longaeva_).
+
+    ![](./img/absence_Pinus_longaeva_map_cropped.png)
 
 ### Data sources
 
@@ -41,7 +45,7 @@ toc: true
 
 - Marine
 
-    - [Bio-ORACLE](http://www.oracle.ugent.be), per [Tyberghein et al (2011)](https://purl.org/net/frew/ESM296/wk4/refs/Tyberghein_etal_2012.pdf)
+    - [Bio-ORACLE](http://www.oracle.ugent.be), per [Tyberghein et al (2011)](https://purl.org/net/frew/ESM296/wk4/refs/Tyberghein_etal_2012.pdf). Note: need to define projection as the Behrmann projected coordinate system.
 
 - General
 
