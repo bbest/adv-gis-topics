@@ -24,7 +24,7 @@ The cutoff value corresponds to the color, legend on right vertical. At each cut
 
 1. **False negatives** (FN) occur when the GLM predicts absence of the species for a given location, when in fact our validation dataset says it does occur there (ie predicted=0 but TestData=1 and presence=1). This is also called an error of "ommission", or Type II error. **True positive rate** (TPR; y axis of ROC plot above) is the number of false positives over all the known _negatives_ from the training dataset (ie TestData=1 and presence=0). The higher the TPR, the fewer false negatives.
 
-A model with a cutoff that predicts the test data exactly would produce zero false positives (FPR=0) and zero false negatives (TPR=1), placing its cutoff in the far upper left of this ROC plot. The closer to this corner the cutoff lies, the more accurate the model. The dashed diagonal line reflects the expectation of a random model getting half right, half wrong. Any improvement to the upper left beyond this diagonal is an overall measure of model performance summarized as the area under the curve (AUC), which is commonly reported in predictive modeling literature.
+A model with a cutoff that predicts the test data exactly would produce zero false positives (FPR=0) and zero false negatives (TPR=1), placing its cutoff in the far upper left of this ROC plot. The closer to this corner the cutoff lies, the more accurate the model. The dashed diagonal line reflects the expectation of a random model getting half correct, half wrong. Any improvement of the curve to the upper left beyond this diagonal is an overall measure of model performance summarized as the area under the curve (AUC), which is commonly reported in predictive modeling literature.
 
 The 4 combinations for truth versus prediction give rise to the aptly named **confusion matrix**.
 
@@ -36,13 +36,13 @@ The 4 combinations for truth versus prediction give rise to the aptly named **co
 
 An ideal cutoff in the model maximizes true positives (TP) and true negatives (TN), while minimizing false positives (FP) and false negatives (FN). The true positive rate (TPR) rate is calculated from the numbers present from that row of truly present data, whereas the false positive rate is calculated from the numbers present in that row of truly absent data.
 
-To fully understand how this plays out, let's look at how varying the cutoff value produces different predictive maps of habitat (in green).
+To fully understand how this plays out, let's look at how varying the cutoff value produces different predictive maps of habitat.
 
 ![](./img/roc_mapped.png)
 
 Starting with a cutoff of 0.1, all continously ranging predicted values above 0.1 are assigned to 1, yielding the majority of the study area as species habitat. As the cutoff value increases, the species habitat shrinks, as does the number of false positives (ie predict species there, but truthfully not). However the number of false negatives increases (ie predict species not present, yet validation dataset says it is).
 
-A common default cutoff to assign species habitat model optimizes the two rates to provide cutoff geometrically closest to that perfect upper left corner. For a highly endangered species, you may want to tune that dial differently such that you are much more risk averse to falsely predicting absence which might otherwise allow potentially harmful activities in these areas. This translates to lower cutoff value, more expansive species range,  fewer false negatives, higher true positive rate, more false positives and higher false positive rate. One such example given last week by Larry Crowder is the North Atlantic right whale (_Eubalaena glacialis_), having a population of less than 500 for which shipping lanes were rerouted around Boston Harbor to avoid ship strikes.
+A common default cutoff to assign species habitat model optimizes the two rates to provide a cutoff geometrically closest to that perfect upper left corner. For a highly endangered species, you may want to tune that dial differently such that you are much more risk averse to falsely predicting absence which might otherwise allow potentially harmful activities in these areas. This translates to operating with a lower cutoff value, which translates into: more expansive species range, fewer false negatives, higher true positive rate, more false positives and higher false positive rate. One such example given last week by Larry Crowder is the North Atlantic right whale (_Eubalaena glacialis_), having a population of less than 500 for which shipping lanes were rerouted around Boston Harbor to avoid ship strikes.
 
 ![_Photo credit: 13 October 2010, photo by John Calambokidis, Cascadia Research_](./img/Calambokidis2010_whale-tanker.jpg)
 
