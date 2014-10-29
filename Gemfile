@@ -1,6 +1,7 @@
 # Skinny Bones Gemfile
 source "https://rubygems.org"
 
+gem "jekyll-coffeescript"
 gem "github-pages"
 gem "jekyll-sitemap"
 gem "sass"
