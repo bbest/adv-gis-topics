@@ -185,18 +185,21 @@ Then in the body of the HTML, replace the contents of whatever is in between the
 And within the `...` above, insert the following:
 
 ```html
-  <div id="map" style="width: 600px; height: 400px"></div>
-  <script>
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+<script src="http://calvinmetcalf.github.io/leaflet-ajax/dist/leaflet.ajax.min.js"></script>
 
-  	var map = L.map('map').setView([38, -115], 7);
-        
-    var Esri_NatGeoWorldMap = L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}', {
-  attribution: 'Tiles &copy; Esri &mdash; National Geographic, Esri, DeLorme, NAVTEQ, UNEP-WCMC, USGS, NASA, ESA, METI, NRCAN, GEBCO, NOAA, iPC',
-	maxZoom: 16
-});
-    Esri_NatGeoWorldMap.addTo(map)
+<div id="map" style="width: 600px; height: 400px"></div>
 
-	</script>
+<script>
+  // create Leaflet map object and set view's center and zoom level
+  var map = L.map('map').setView([38, -115], 7);        
+  
+  // add background map layer
+  var Esri_NatGeoWorldMap = L.tileLayer(
+    'http://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}');
+  Esri_NatGeoWorldMap.addTo(map)
+</script>
 ```
 
 This should produce this interactive map:
@@ -206,16 +209,15 @@ This should produce this interactive map:
 <script src="http://calvinmetcalf.github.io/leaflet-ajax/dist/leaflet.ajax.min.js"></script>
 
 <div id="map0" style="width: 600px; height: 400px"></div>
+
 <script>
-
-  var map0 = L.map('map0').setView([38, -115], 7);
-      
-  var Esri_NatGeoWorldMap = L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}', {
-attribution: 'Tiles &copy; Esri &mdash; National Geographic, Esri, DeLorme, NAVTEQ, UNEP-WCMC, USGS, NASA, ESA, METI, NRCAN, GEBCO, NOAA, iPC',
-maxZoom: 16
-});
+  // create Leaflet map object and set view's center and zoom level
+  var map0 = L.map('map0').setView([38, -115], 7);        
+  
+  // add background map layer
+  var Esri_NatGeoWorldMap = L.tileLayer(
+    'http://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}');
   Esri_NatGeoWorldMap.addTo(map0)
-
 </script>
 
 Next, add the following lines of code between `Esri_NatGeoWorldMap.addTo(map0)` and `</script>` to map the points and polygons:
@@ -239,10 +241,8 @@ This should produce the following interactive map after you commit and push:
 	var map = L.map('map').setView([38, -115], 7);
   
   // add basemap layer
-  var Esri_NatGeoWorldMap = L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}', {
-attribution: 'Tiles &copy; Esri &mdash; National Geographic, Esri, DeLorme, NAVTEQ, UNEP-WCMC, USGS, NASA, ESA, METI, NRCAN, GEBCO, NOAA, iPC',
-maxZoom: 16
-});
+  var Esri_NatGeoWorldMap = L.tileLayer(
+    'http://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}');
   Esri_NatGeoWorldMap.addTo(map)
   
   // add GeoJSON of points
