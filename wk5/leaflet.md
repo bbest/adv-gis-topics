@@ -86,7 +86,7 @@ git commit -m "testing"
 git push
 ```
 
-## 2. Get polygons of bristlecone pine distribution
+## 3. Get polygons of bristlecone pine distribution
 
 Let's continuing with our pet organism the bristlecone pine (_Pinus longaeva_). Download the species distribution shapefile from this website:
   
@@ -98,6 +98,12 @@ Unzip and create directories as needed so the shapefile and associated files liv
 H:\esm296-4f\lab5\raw\pinulong.shp
 ```
 
+## 4. Generate points of bristlecone pine and create GeoJSON files
 
+Copy the following scripts into your lab5 homework location, ie `H:\esm296-4f\github\lab5`:
+
+- [get_species.R](https://github.com/ucsb-bren/esm296-4f/blob/gh-pages/wk4/get_species.R) pulls points from GBIF and outputs a shapefile
+
+- [create_geojson.R](https://github.com/ucsb-bren/esm296-4f/blob/gh-pages/wk5/create_geojson.R) converts shapefile of points and polygons into GeoJSON
 
 ## Review
