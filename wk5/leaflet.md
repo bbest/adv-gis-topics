@@ -1,6 +1,16 @@
 ---
+layout: article
 title: "Creating Interactive Spatial Content Online Using Github and Leaflet"
+excerpt: "week 5"
+image:
+  feature:
+  teaser:
+  thumb:
+share: false
+ads: false
+toc: true
 ---
+
 
 ## Introduction
 
