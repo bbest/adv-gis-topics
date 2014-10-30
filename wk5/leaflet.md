@@ -151,15 +151,16 @@ Let's fix the link to the stylesheet which is now, relative to the map folder, o
 Replace this line:
 
 ```html
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+<link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 ```
 
 with these:
 
 ```html
-    <link rel="stylesheet" type="text/css" media="screen" href="../stylesheets/stylesheet.css">
-    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
-    <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+<link rel="stylesheet" type="text/css" media="screen" href="../stylesheets/stylesheet.css">
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+<script src="http://calvinmetcalf.github.io/leaflet-ajax/dist/leaflet.ajax.min.js"></script>
 ```
 
 Then in the body of the HTML, replace the contents of whatever is in between the following, ie `...`:
@@ -200,21 +201,63 @@ This should produce this interactive map:
 <link rel="stylesheet" type="text/css" media="screen" href="../stylesheets/stylesheet.css">
 <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
 <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+<script src="http://calvinmetcalf.github.io/leaflet-ajax/dist/leaflet.ajax.min.js"></script>
 
-<div id="map" style="width: 600px; height: 400px"></div>
+<div id="map0" style="width: 600px; height: 400px"></div>
 <script>
 
-  var map = L.map('map').setView([38, -115], 7);
+  var map = L.map('map0').setView([38, -115], 7);
       
   var Esri_NatGeoWorldMap = L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}', {
 attribution: 'Tiles &copy; Esri &mdash; National Geographic, Esri, DeLorme, NAVTEQ, UNEP-WCMC, USGS, NASA, ESA, METI, NRCAN, GEBCO, NOAA, iPC',
 maxZoom: 16
 });
-  Esri_NatGeoWorldMap.addTo(map)
+  Esri_NatGeoWorldMap.addTo(map0)
 
 </script>
 
+Next, add the following lines of code between `Esri_NatGeoWorldMap.addTo(map0)` and `</script>` to map the points and polygons:
+
+```html
+    // add GeoJSON of points
+    var pts = new L.GeoJSON.AJAX('./pts_pinulong.geojson'); 
+    pts.addTo(map)
+
+    // add GeoJSON of points
+    var ply = new L.GeoJSON.AJAX('./ply_pinulong.geojson'); 
+    ply.addTo(map)
+```
+
+This should produce the following interactive map after you commit and push:
+
+<div id="map" style="width: 600px; height: 400px"></div>
+  <script>
+
+    // add map
+  	var map = L.map('map').setView([38, -115], 7);
+    
+    // add basemap layer
+    var Esri_NatGeoWorldMap = L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}', {
+  attribution: 'Tiles &copy; Esri &mdash; National Geographic, Esri, DeLorme, NAVTEQ, UNEP-WCMC, USGS, NASA, ESA, METI, NRCAN, GEBCO, NOAA, iPC',
+	maxZoom: 16
+});
+    Esri_NatGeoWorldMap.addTo(map)
+    
+    // add GeoJSON of points
+    var pts = new L.GeoJSON.AJAX('./pts_pinulong.geojson'); 
+    pts.addTo(map)
+
+    // add GeoJSON of points
+    var ply = new L.GeoJSON.AJAX('./ply_pinulong.geojson'); 
+    ply.addTo(map)
+
+	</script>
+
+Next, lets' 
+
 TODO:
+
+- Save https://raw.githubusercontent.com/calvinmetcalf/leaflet-ajax/master/dist/leaflet.ajax.min.js as `map/leaflet.ajax.min.js`.
 
 - preview in browser before commit and push
 
