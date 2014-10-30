@@ -228,8 +228,12 @@ TODO:
 ## Review
 
 ## Further Resources
+- geojson.io
+
 - [leafletjs.com: Tutorials](http://leafletjs.com/examples.html)
 - [http://leaflet-extras.github.io/leaflet-providers/preview/](leaflet-extras.github.io: Leaflet Providers)
 - [github.com: Mapping geoJSON files on GitHub](https://help.github.com/articles/mapping-geojson-files-on-github/)
 - [zevross.com: Using R to quickly create an interactive online map using the leafletR package](http://zevross.com/blog/2014/04/11/using-r-to-quickly-create-an-interactive-online-map-using-the-leafletr-package/)
 - [gdal.org: GeoJSON](http://www.gdal.org/drv_geojson.html)
+
+- http://gitspatial.com/
