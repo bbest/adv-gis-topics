@@ -137,6 +137,11 @@ You should see the points and polygons automatically rendered by Github in a lit
 
 ![](./img/github_ply.PNG)
 
+<script src="https://embed.github.com/view/geojson/bbest/bbest.github.io/master/map/pts_pinulong.geojson"></script>
+
+<script src="https://embed.github.com/view/geojson/bbest/bbest.github.io/master/map/ply_pinulong.geojson"></script>
+
+
 ## 6. Create Leaflet Mapper
 
 But what about embedding these maps in your own website? And how about combining the points and polygons into a single map view?
