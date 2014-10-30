@@ -133,9 +133,9 @@ Check all of these to add, commit and push to your repository. Now visit your Gi
 
 You should see the points and polygons automatically rendered by Github in a little zoomable map with clickable popups showing the given feature's attributes. Pretty cool!
 
-<!-- <script src="https://embed.github.com/view/geojson/bbest/bbest.github.io/master/map/pts_pinulong.geojson"></script>
+<script src="https://embed.github.com/view/geojson/bbest/bbest.github.io/master/map/pts_pinulong.geojson"></script>
 
-<script src="https://embed.github.com/view/geojson/bbest/bbest.github.io/master/map/ply_pinulong.geojson"></script> -->
+<script src="https://embed.github.com/view/geojson/bbest/bbest.github.io/master/map/ply_pinulong.geojson"></script>
 
 
 ## 6. Create Leaflet Mapper
@@ -198,7 +198,6 @@ And within the `...` above, insert the following:
 
 This should produce this interactive map:
 
-```html
 <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
 <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
 <script src="http://calvinmetcalf.github.io/leaflet-ajax/dist/leaflet.ajax.min.js"></script>
@@ -215,7 +214,6 @@ maxZoom: 16
   Esri_NatGeoWorldMap.addTo(map0)
 
 </script>
-```
 
 Next, add the following lines of code between `Esri_NatGeoWorldMap.addTo(map0)` and `</script>` to map the points and polygons:
 
@@ -230,10 +228,6 @@ Next, add the following lines of code between `Esri_NatGeoWorldMap.addTo(map0)` 
 ```
 
 This should produce the following interactive map after you commit and push:
-
-<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
-<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
-<script src="http://calvinmetcalf.github.io/leaflet-ajax/dist/leaflet.ajax.min.js"></script>
 
 <div id="map" style="width: 600px; height: 400px"></div>
 <script>
