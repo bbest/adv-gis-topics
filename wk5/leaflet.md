@@ -100,10 +100,135 @@ H:\esm296-4f\lab5\raw\pinulong.shp
 
 ## 4. Generate points of bristlecone pine and create GeoJSON files
 
-Copy the following scripts into your lab5 homework location, ie `H:\esm296-4f\github\lab5`:
+Let's also get observation points of bristlecone pine to provide another type of vector data to display.
 
-- [get_species.R](https://github.com/ucsb-bren/esm296-4f/blob/gh-pages/wk4/get_species.R) pulls points from GBIF and outputs a shapefile
+Copy the following scripts into RStudio and save to your lab5 homework location, ie `H:\esm296-4f\github\lab5`:
 
-- [create_geojson.R](https://github.com/ucsb-bren/esm296-4f/blob/gh-pages/wk5/create_geojson.R) converts shapefile of points and polygons into GeoJSON
+- [`get_species.R`](https://github.com/ucsb-bren/esm296-4f/blob/gh-pages/wk4/get_species.R) pulls points from GBIF and outputs a shapefile
+
+- [`create_geojson.R`](https://github.com/ucsb-bren/esm296-4f/blob/gh-pages/wk5/create_geojson.R) converts shapefile of points and polygons into GeoJSON
+
+Change the input variable USER to your Github username for the second script and run both in sequence so you should then have the following:
+
+- `H:\esm296-4f\lab5\raw\`
+  - `pinulong.shp` - polygon shapefile
+  - `pts_pinulong.shp` - point shapefile
+- `H:\esm296-4f\bbest.github.io\map\`
+  - `ply_pinulong.geojson` - polygon GeoJSON file
+  - `pts_pinulong.geojson` - points GeoJSON file
+
+Push these scripts in `H:\esm296-4f\github\lab5` to your Github site.
+
+If the Git pane is not showing up in your "github" project, you will need to add the Git Bash path again: Tools > Global Options… Git/SVN > Git executable: Browse… and paste `C:\Program Files (x86)\Git\bin\git.exe`.
+
+## 5. Open website files in RStudio and push GeoJSON files
+
+Let's use RStudio to push these created GeoJSON files and edit the HTML of the site. Go to File > New Project... > Existing Directory. Navigate to your H:\esm296-4f\USER.github.io folder. I recommend not opening this in a new window to reduce confusion.
+
+You should see in your Git pane the "map" folder containing the GeoJSON files and other two files created by the new RStudio project listed as untracked status.
+
+![](rstudio_bbest.github.io-git.PNG)
+
+Check all of these to add, commit and push to your repository. Now visit your Github site https://github.com/USER/USER.github.io and navigate to the *.geojson files in your map directory.
+
+You should see the points and polygons automatically rendered by Github in a little zoomable map with clickable popups showing the given feature's attributes. Pretty cool!
+
+![](./img/github_pts.PNG)
+
+![](./img/github_ply.PNG)
+
+## 6. Create Leaflet Mapper
+
+But what about embedding these maps in your own website? And how about combining the points and polygons into a single map view?
+
+To do this, we'll use the same Javascript library as Github: [Leaflet.js](http://leafletjs.com). Let's put this in a simple URL on your website USER.github.io/map. By default web servers generally serve up an index.html for any given folder. So copy the index.html in the root of your site into a new map folder. To do this in RStudio's Files pane, after creating New Folder map, tick index.html, More > Copy... `map/index.html`.
+
+Now click on map/index.html > Open in Editor.
+
+Let's fix the link to the stylesheet which is now, relative to the map folder, one directory up. While we're at it, let's add the stylesheet and script needed for Leaflet.
+
+Replace this line:
+
+```html
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+```
+
+with these:
+
+```html
+    <link rel="stylesheet" type="text/css" media="screen" href="../stylesheets/stylesheet.css">
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+    <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+```
+
+Then in the body of the HTML, replace the contents of whatever is in between the following, ie `...`:
+
+```html
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+
+...    
+ 
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+```
+
+And within the `...` above, insert the following:
+
+```html
+  <div id="map" style="width: 600px; height: 400px"></div>
+  <script>
+
+  	var map = L.map('map').setView([38, -115], 7);
+        
+    var Esri_NatGeoWorldMap = L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}', {
+  attribution: 'Tiles &copy; Esri &mdash; National Geographic, Esri, DeLorme, NAVTEQ, UNEP-WCMC, USGS, NASA, ESA, METI, NRCAN, GEBCO, NOAA, iPC',
+	maxZoom: 16
+});
+    Esri_NatGeoWorldMap.addTo(map)
+
+	</script>
+```
+
+This should produce this interactive map:
+
+<link rel="stylesheet" type="text/css" media="screen" href="../stylesheets/stylesheet.css">
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+
+<div id="map" style="width: 600px; height: 400px"></div>
+<script>
+
+  var map = L.map('map').setView([38, -115], 7);
+      
+  var Esri_NatGeoWorldMap = L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}', {
+attribution: 'Tiles &copy; Esri &mdash; National Geographic, Esri, DeLorme, NAVTEQ, UNEP-WCMC, USGS, NASA, ESA, METI, NRCAN, GEBCO, NOAA, iPC',
+maxZoom: 16
+});
+  Esri_NatGeoWorldMap.addTo(map)
+
+</script>
+
+TODO:
+
+- preview in browser before commit and push
+
+- add link to main page.
+
+- http://www.gdal.org/gdal2tiles.html, http://gis.stackexchange.com/questions/66986/gdal2tiles-py-generates-wrong-tiles-maptiler-the-right-ones
+
+- Symbology of points to a tree marker
+
 
 ## Review
+
+## Further Resources
+- [leafletjs.com: Tutorials](http://leafletjs.com/examples.html)
+- [http://leaflet-extras.github.io/leaflet-providers/preview/](leaflet-extras.github.io: Leaflet Providers)
+- [github.com: Mapping geoJSON files on GitHub](https://help.github.com/articles/mapping-geojson-files-on-github/)
+- [zevross.com: Using R to quickly create an interactive online map using the leafletR package](http://zevross.com/blog/2014/04/11/using-r-to-quickly-create-an-interactive-online-map-using-the-leafletr-package/)
+- [gdal.org: GeoJSON](http://www.gdal.org/drv_geojson.html)

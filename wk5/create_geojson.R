@@ -33,6 +33,10 @@ for (fc in c('pts','ply')){
     cat('  assigning WGS84 projection\n')
     proj4string(sp) = CRS('+proj=longlat +ellps=WGS84 +datum=WGS84')
   }
+  
+  # spit out center and extent
+  xy = rowMeans(bbox(sp))
+  cat(sprintf('  center (lat, lon): %g, %g\n', xy[1], xy[2]))
     
   # output to geojson
   tmp = tempfile()
