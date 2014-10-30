@@ -133,10 +133,6 @@ Check all of these to add, commit and push to your repository. Now visit your Gi
 
 You should see the points and polygons automatically rendered by Github in a little zoomable map with clickable popups showing the given feature's attributes. Pretty cool!
 
-![](./img/github_pts.PNG)
-
-![](./img/github_ply.PNG)
-
 <script src="https://embed.github.com/view/geojson/bbest/bbest.github.io/master/map/pts_pinulong.geojson"></script>
 
 <script src="https://embed.github.com/view/geojson/bbest/bbest.github.io/master/map/ply_pinulong.geojson"></script>
