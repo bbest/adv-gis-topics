@@ -9,6 +9,9 @@ image:
 share: false
 ads: false
 toc: true
+output:
+  html_document:
+    self_contained: false
 ---
 
 
@@ -205,7 +208,7 @@ This should produce this interactive map:
 <div id="map0" style="width: 600px; height: 400px"></div>
 <script>
 
-  var map = L.map('map0').setView([38, -115], 7);
+  var map0 = L.map('map0').setView([38, -115], 7);
       
   var Esri_NatGeoWorldMap = L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}', {
 attribution: 'Tiles &copy; Esri &mdash; National Geographic, Esri, DeLorme, NAVTEQ, UNEP-WCMC, USGS, NASA, ESA, METI, NRCAN, GEBCO, NOAA, iPC',
