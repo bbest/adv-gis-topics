@@ -59,7 +59,7 @@ You'll notice some webby files now in your repository: images, javascripts, styl
 
 Now add https://USER.github.io (replacing USER with your Github username) to the Website entry at top next to Description and Save. Finally, check out your website! (Might take up to 10 minutes to appear)
 
-## Git clone website locally
+## 2. Git clone website locally
 
 Now let's get that website cloned locally to your machine so you can easily add and edit content. Launch Git Bash and enter the following commands, replacing FIRST LAST, USER, EMAIL variables with your own Github information. After setting these variables in the first couple lines, you can run the rest of the commands as is, since they use variable substitution.
 
@@ -69,17 +69,17 @@ USER=bbest
 FIRST_LAST="Ben Best"
 EMAIL=bbest@nceas.ucsb.edu
 
-# clone repo
+# clone repo to H: drive class folder
 git clone https://github.com/$USER/$USER.github.io.git /h/esm296-4f/$USER.github.io
 
-# enter credentials
+# configure repo
 cd /h/esm296-4f/$USER.github.io
 git config user.name "$FIRST_LAST"
 git config user.email $EMAIL
 git config credential.helper wincred
 git config push.default simple
 
-# push a test to ensure password saved
+# push test to ensure password saved
 git touch test.md
 git add test.md
 git commit -m "testing"

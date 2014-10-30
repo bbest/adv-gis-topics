@@ -7,7 +7,9 @@ genus   = 'Pinus'
 species = 'longaeva'
 
 # path to output shapefile constructed from scientific name of your speciess
-shp = sprintf('H:/esm296-4f/project/data/gbif_%s_%s', genus, species)
+#shp = sprintf('H:/esm296-4f/project/data/pts_%s_%s', genus, species)
+# OR
+shp = 'H:/esm296-4f/lab5/raw/pts_pinulong'
 
 # get data from Global Biodiversity Information Facility (GBIF)
 sp = gbif(genus, species, sp=T, removeZeros=T)
