@@ -14,7 +14,7 @@ toc: true
 
 ## Introduction
 
-In the modern world of conservation, engaging a broad range of stakeholders is vital to the success of any given proposal. Interactive online maps provide a powerful tool for facilitiating the visibility and interest in relevant spatial products that you derive.
+In the world of conservation, engaging a broad range of stakeholders is often vital to the success of a project. Interactive online maps provide a powerful visualization tool for exploring relevant spatial products.
 
 Goals:
 
