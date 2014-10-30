@@ -127,7 +127,7 @@ Let's use RStudio to push these created GeoJSON files and edit the HTML of the s
 
 You should see in your Git pane the "map" folder containing the GeoJSON files and other two files created by the new RStudio project listed as untracked status.
 
-![](rstudio_bbest.github.io-git.PNG)
+![](./img/rstudio_bbest.github.io-git.PNG)
 
 Check all of these to add, commit and push to your repository. Now visit your Github site https://github.com/USER/USER.github.io and navigate to the *.geojson files in your map directory.
 
@@ -198,7 +198,7 @@ And within the `...` above, insert the following:
 
 This should produce this interactive map:
 
-<link rel="stylesheet" type="text/css" media="screen" href="../stylesheets/stylesheet.css">
+```html
 <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
 <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
 <script src="http://calvinmetcalf.github.io/leaflet-ajax/dist/leaflet.ajax.min.js"></script>
@@ -215,6 +215,7 @@ maxZoom: 16
   Esri_NatGeoWorldMap.addTo(map0)
 
 </script>
+```
 
 Next, add the following lines of code between `Esri_NatGeoWorldMap.addTo(map0)` and `</script>` to map the points and polygons:
 
@@ -230,28 +231,32 @@ Next, add the following lines of code between `Esri_NatGeoWorldMap.addTo(map0)` 
 
 This should produce the following interactive map after you commit and push:
 
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+<script src="http://calvinmetcalf.github.io/leaflet-ajax/dist/leaflet.ajax.min.js"></script>
+
 <div id="map" style="width: 600px; height: 400px"></div>
-  <script>
+<script>
 
-    // add map
-  	var map = L.map('map').setView([38, -115], 7);
-    
-    // add basemap layer
-    var Esri_NatGeoWorldMap = L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}', {
-  attribution: 'Tiles &copy; Esri &mdash; National Geographic, Esri, DeLorme, NAVTEQ, UNEP-WCMC, USGS, NASA, ESA, METI, NRCAN, GEBCO, NOAA, iPC',
-	maxZoom: 16
+  // add map
+	var map = L.map('map').setView([38, -115], 7);
+  
+  // add basemap layer
+  var Esri_NatGeoWorldMap = L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}', {
+attribution: 'Tiles &copy; Esri &mdash; National Geographic, Esri, DeLorme, NAVTEQ, UNEP-WCMC, USGS, NASA, ESA, METI, NRCAN, GEBCO, NOAA, iPC',
+maxZoom: 16
 });
-    Esri_NatGeoWorldMap.addTo(map)
-    
-    // add GeoJSON of points
-    var pts = new L.GeoJSON.AJAX('./pts_pinulong.geojson'); 
-    pts.addTo(map)
+  Esri_NatGeoWorldMap.addTo(map)
+  
+  // add GeoJSON of points
+  var pts = new L.GeoJSON.AJAX('./pts_pinulong.geojson'); 
+  pts.addTo(map)
 
-    // add GeoJSON of points
-    var ply = new L.GeoJSON.AJAX('./ply_pinulong.geojson'); 
-    ply.addTo(map)
+  // add GeoJSON of points
+  var ply = new L.GeoJSON.AJAX('./ply_pinulong.geojson'); 
+  ply.addTo(map)
 
-	</script>
+</script>
 
 Next, lets' 
 
