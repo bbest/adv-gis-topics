@@ -252,12 +252,12 @@ To export a QGIS map layer as a KML document:
 
 1. right-click on the layer in the Layers list and select *Save As...*
 2. in the *Save vector layer as...* panel:
-    a. Set *Format* to *Keyhole Markup Language [KML]*
-    b. Specify a filename to save the KML in.
-    c. Make sure the *CRS* is *WGS 84*
-    d. If you want to save the layers line color and weight, set *Symbology export* to *Feature symbology*
+    1. Set *Format* to *Keyhole Markup Language [KML]*
+    2. Specify a filename to save the KML in.
+    3. Make sure the *CRS* is *WGS 84*
+    4. If you want to save the layers line color and weight, set *Symbology export* to *Feature symbology*
         * Note: polygon fill styles won't export to KML (this is a bug).
-    e. **important**: Set *AltitudeMode* to *clampToGround*
+    5. **important**: Set *AltitudeMode* to *clampToGround*
 
 ### ArcGIS
 
