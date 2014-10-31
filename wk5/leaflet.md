@@ -253,8 +253,7 @@ This should produce the following interactive map after you commit and push:
 
 Next, let's customize the symbology so the points are green tree markers and polygons are orange. We're using the [Leaflet.awesome-markers](https://github.com/lvoogdt/Leaflet.awesome-markers) which enables you to use any of the nifty icons from [Font-Awesome](http://fortawesome.github.io/Font-Awesome/icons/).
 
-Replece the lines above for adding geojson points and polygons with these:
-
+Replace the lines above for adding geojson points and polygons with these:
 
 ```html
 // create tree marker
@@ -297,15 +296,6 @@ var map2 = L.map('map2').setView([38, -115], 7);
 var Esri_NatGeoWorldMap = L.tileLayer(
   'http://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}');
 Esri_NatGeoWorldMap.addTo(map2)
-
-// add geojson points
-var pts = new L.GeoJSON.AJAX('./pts_pinulong.geojson');
-pts.addTo(map2)
-
-// add geojson polygons
-var ply = new L.GeoJSON.AJAX('./ply_pinulong.geojson');
-ply.addTo(map2)
-
 
 // create tree marker
 var treeMarker = L.AwesomeMarkers.icon({
