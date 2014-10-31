@@ -11,6 +11,13 @@ ads: false
 toc: true
 ---
 
+# Setup (one-time hack for GIS Lab machines)
+
+The GIS Lab machines don't have a Start menu entry for Google Earth. You can fix this by:
+
+1. In *Windows Explorer*, browse to `C:\Program Files (x86)\Google\Google Earth\client`
+2. Right-click on `googleearth.exe` and select *Pin to start menu*
+
 # KML: the shapefile of the Web
 
 ## Web
