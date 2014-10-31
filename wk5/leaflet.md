@@ -189,9 +189,15 @@ And within the `...` above, insert the following:
 
 This should produce this interactive map:
 
+<link rel="stylesheet" href="/stylesheets/stylesheet.css">
+<link rel="stylesheet" href="/stylesheets/leaflet.awesome-markers.css">
 <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" >
+
 <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
 <script src="http://calvinmetcalf.github.io/leaflet-ajax/dist/leaflet.ajax.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.0/leaflet.awesome-markers.js"></script>
+
 
 <div id="map0" style="width: 600px; height: 400px"></div>
 
