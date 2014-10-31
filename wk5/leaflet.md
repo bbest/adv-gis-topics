@@ -72,7 +72,7 @@ git config credential.helper wincred
 git config push.default simple
 
 # push test to ensure password saved
-git touch test.md
+touch test.md
 git add test.md
 git commit -m "testing"
 git push
