@@ -23,11 +23,11 @@ Goals:
 
 - Create free public **website** using Github to house map.
 
-- Fetch point observations from GBIF and species distribution polygons from the USGS for our study "critter" the bristlecone pine.
+- **Fetch** layers of point observations from GBIF and species distribution polygons from the USGS for our study "critter" the bristlecone pine.
 
 - Create **GeoJSON** files using the rgdal package. Github automatically renders these with a Leaflet map.
 
-- Create your own interactive map combining multiple layers and customizing symbology to be embedded on your website.
+- Create your own interactive **Leaflet map** combining multiple layers and customizing symbology to be embedded on your website.
 
 ## 1. Create Website
 
@@ -329,7 +329,7 @@ ply.addTo(map2)
 </script>
 
 
-## Add link from main site
+## 7. Add link from main site
 
 To add a link from your root site USER.github.io, let's add a link from the index.html there to map/index.html.
 
