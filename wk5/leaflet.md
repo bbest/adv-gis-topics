@@ -263,7 +263,6 @@ var treeMarker = L.AwesomeMarkers.icon({
   prefix: 'fa',
   markerColor: 'darkgreen',
   iconColor: 'white'});
-//L.marker([38, -115], {icon: redMarker}).addTo(map);
 
 // add geojson points with tree marker and popup
 var pts = new L.GeoJSON.AJAX('./pts_pinulong.geojson', {
