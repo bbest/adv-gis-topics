@@ -185,10 +185,6 @@ Then in the body of the HTML, replace the contents of whatever is in between the
 And within the `...` above, insert the following:
 
 ```html
-<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
-<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
-<script src="http://calvinmetcalf.github.io/leaflet-ajax/dist/leaflet.ajax.min.js"></script>
-
 <div id="map" style="width: 600px; height: 400px"></div>
 
 <script>
@@ -223,13 +219,13 @@ This should produce this interactive map:
 Next, add the following lines of code between `Esri_NatGeoWorldMap.addTo(map0)` and `</script>` to map the points and polygons:
 
 ```html
-    // add GeoJSON of points
-    var pts = new L.GeoJSON.AJAX('./pts_pinulong.geojson'); 
-    pts.addTo(map)
+// add geojson of points
+var pts = new L.GeoJSON.AJAX('./pts_pinulong.geojson'); 
+pts.addTo(map)
 
-    // add GeoJSON of points
-    var ply = new L.GeoJSON.AJAX('./ply_pinulong.geojson'); 
-    ply.addTo(map)
+// add GeoJSON of points
+var ply = new L.GeoJSON.AJAX('./ply_pinulong.geojson'); 
+ply.addTo(map)
 ```
 
 This should produce the following interactive map after you commit and push:
@@ -255,7 +251,92 @@ This should produce the following interactive map after you commit and push:
 
 </script>
 
+Next, let's customize the symbology so the points are green tree markers and polygons are orange. We're using the [Leaflet.awesome-markers](https://github.com/lvoogdt/Leaflet.awesome-markers) which enables you to use any of the nifty icons from [Font-Awesome](http://fortawesome.github.io/Font-Awesome/icons/).
 
+Replece the lines above for adding geojson points and polygons with these:
+
+
+```html
+// create tree marker
+var treeMarker = L.AwesomeMarkers.icon({
+  icon: 'tree',
+  prefix: 'fa',
+  markerColor: 'darkgreen',
+  iconColor: 'white'});
+//L.marker([38, -115], {icon: redMarker}).addTo(map);
+
+// add geojson points with tree marker and popup
+var pts = new L.GeoJSON.AJAX('./pts_pinulong.geojson', {
+  pointToLayer: function (feature, latlng) {
+    return L.marker(latlng, {icon: treeMarker});
+  },
+  onEachFeature: function (feature, layer) {
+    layer.bindPopup(
+      "Collected by: <strong>" + feature.properties.collctr + "</strong><br><br>" +
+      "at: " + feature.properties.localty + "<br><br>" +
+      "for: " + feature.properties.instttn, { maxWidth: 200 });
+  }
+});
+pts.addTo(map)
+
+// add geojson polygons with a style
+var ply = new L.GeoJSON.AJAX('./ply_pinulong.geojson', {
+  "color": "#ff7800",
+  "weight": 5,
+  "opacity": 0.65 });
+ply.addTo(map)
+```
+
+<div id="map2" style="width: 600px; height: 400px"></div>
+<script>
+
+// add map
+var map2 = L.map('map2').setView([38, -115], 7);
+
+// add basemap layer
+var Esri_NatGeoWorldMap = L.tileLayer(
+  'http://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}');
+Esri_NatGeoWorldMap.addTo(map2)
+
+// add geojson points
+var pts = new L.GeoJSON.AJAX('./pts_pinulong.geojson');
+pts.addTo(map2)
+
+// add geojson polygons
+var ply = new L.GeoJSON.AJAX('./ply_pinulong.geojson');
+ply.addTo(map2)
+
+
+// create tree marker
+var treeMarker = L.AwesomeMarkers.icon({
+  icon: 'tree',
+  prefix: 'fa',
+  markerColor: 'darkgreen',
+  iconColor: 'white'});
+//L.marker([38, -115], {icon: redMarker}).addTo(map2);
+
+// add geojson points with tree marker and popup
+var pts = new L.GeoJSON.AJAX('./pts_pinulong.geojson', {
+  pointToLayer: function (feature, latlng) {
+    return L.marker(latlng, {icon: treeMarker});
+  },
+  onEachFeature: function (feature, layer) {
+    layer.bindPopup(
+      "Collected by: <strong>" + feature.properties.collctr + "</strong><br><br>" +
+      "at: " + feature.properties.localty + "<br><br>" +
+      "for: " + feature.properties.instttn, { maxWidth: 200 });
+  }
+});
+pts.addTo(map2)
+
+// add geojson polygons with a style
+var ply = new L.GeoJSON.AJAX('./ply_pinulong.geojson', {
+  "color": "#ff7800",
+  "weight": 5,
+  "opacity": 0.65 });
+ply.addTo(map2)
+
+</script>
 
 TODO:
 
@@ -274,12 +355,19 @@ TODO:
 ## Review
 
 ## Further Resources
-- geojson.io
 
-- [leafletjs.com: Tutorials](http://leafletjs.com/examples.html)
-- [http://leaflet-extras.github.io/leaflet-providers/preview/](leaflet-extras.github.io: Leaflet Providers)
-- [github.com: Mapping geoJSON files on GitHub](https://help.github.com/articles/mapping-geojson-files-on-github/)
-- [zevross.com: Using R to quickly create an interactive online map using the leafletR package](http://zevross.com/blog/2014/04/11/using-r-to-quickly-create-an-interactive-online-map-using-the-leafletr-package/)
-- [gdal.org: GeoJSON](http://www.gdal.org/drv_geojson.html)
+- [GeoJSON.io](http://geojson.io) - powerful GeoJSON interface, allowing editing of features and tables directly from Github
 
-- http://gitspatial.com/
+- [Leaflet Providers](leaflet-extras.github.io: Leaflet Providers) - copy & paste a whole slew of pretty background layers into your map, like Stamen.watercolor
+
+- [Leaflet Tutorials](http://leafletjs.com/examples.html) - go deeper into Leaflet capabilities here
+
+- [Mapping geoJSON files on GitHub](https://help.github.com/articles/mapping-geojson-files-on-github/) - more background on Github capabilities, including symbology, embedding and clustering
+
+- [R and Leaflet: leafletR package](http://zevross.com/blog/2014/04/11/using-r-to-quickly-create-an-interactive-online-map-using-the-leafletr-package/)
+
+- [GDAL.org GeoJSON Driver](http://www.gdal.org/drv_geojson.html)
+
+- [Leaflet Awesome Markers](https://github.com/lvoogdt/Leaflet.awesome-markers)
+
+- [Create a Leaflet map using QGIS: qgis2leaf plugin](http://zevross.com/blog/2014/08/05/it-is-incredibly-easy-to-create-a-leaflet-map-using-qgis/)
