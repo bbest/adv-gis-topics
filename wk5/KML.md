@@ -1,3 +1,16 @@
+---
+layout: home
+title:
+excerpt:
+image:
+  feature:
+  teaser:
+  thumb:
+share: false
+ads: false
+toc: true
+---
+
 # KML: the shapefile of the Web
 
 ## Web
