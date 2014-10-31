@@ -174,7 +174,7 @@ Then in the body of the HTML, replace the contents of whatever is in between the
 And within the `...` above, insert the following:
 
 ```html
-<div id="map" style="width: 600px; height: 400px"></div>
+<div id="map" style="width: 800px; height: 600px"></div>
 
 <script>
   // create Leaflet map object and set view's center and zoom level
@@ -242,13 +242,13 @@ This should produce the following interactive map after you commit and push:
 
 Next, let's customize the symbology so the points are green tree markers and polygons are orange. 
 
-We're going to use the [Leaflet.awesome-markers](https://github.com/lvoogdt/Leaflet.awesome-markers) which enables you to use any of the nifty icons from [Font-Awesome](http://fortawesome.github.io/Font-Awesome/icons/). To use this library we need to download this [zip](https://github.com/lvoogdt/Leaflet.awesome-markers/archive/2.0/develop.zip) and move:
+We're going to use the [Leaflet.awesome-markers](https://github.com/lvoogdt/Leaflet.awesome-markers) which enables you to use any of the nifty icons from [Font-Awesome](http://fortawesome.github.io/Font-Awesome/icons/). To use this library we need to add some files [zip](https://github.com/lvoogdt/Leaflet.awesome-markers/archive/2.0/develop.zip) prepped for you in this zip file you should download it to directly inside your H:\esm296-4f\USER.github.io folder:
 
+[Leaflet.awesome-markers_files.7z](https://purl.org/net/frew/ESM296/wk5/Leaflet.awesome-markers_files.7z)
 
+Open it in 7-zip so you can see the files. Go ahead and right click on 7-zip > Extract Here to place the files in the necessary folders.
 
-
-
-Replace the lines above for adding geojson points and polygons with these:
+Replace the lines you last added above in map/index.html with adding geojson points and polygons with these:
 
 ```html
 // create tree marker
@@ -323,20 +323,18 @@ ply.addTo(map2)
 
 </script>
 
-TODO:
+
+## Add link from main site
+
+To add a link from your root site USER.github.io, let's add a link from the index.html there to map/index.html.
 
 
-- Save https://raw.githubusercontent.com/calvinmetcalf/leaflet-ajax/master/dist/leaflet.ajax.min.js as `map/leaflet.ajax.min.js`.
+```html
+      <h1>Welcome</h1>
+      
+      Check out my <strong><a href='./map'>map of bristlecone pine</a></strong>.
+```
 
-- preview in browser before commit and push
-
-- add link to main page.
-
-- http://www.gdal.org/gdal2tiles.html, http://gis.stackexchange.com/questions/66986/gdal2tiles-py-generates-wrong-tiles-maptiler-the-right-ones
-
-
-
-## Review
 
 ## Further Resources
 
@@ -355,3 +353,5 @@ TODO:
 - [Leaflet Awesome Markers](https://github.com/lvoogdt/Leaflet.awesome-markers)
 
 - [Create a Leaflet map using QGIS: qgis2leaf plugin](http://zevross.com/blog/2014/08/05/it-is-incredibly-easy-to-create-a-leaflet-map-using-qgis/)
+
+- [GDAL Leaflet tile maker for rasters](http://www.gdal.org/gdal2tiles.html)

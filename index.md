@@ -98,7 +98,7 @@ See [**wk4** details](./wk4/).
 
 * **Lecture 5**: Introduction to Online GIS
     * [KML & Google Earth](./wk5/KML.html)
-    * Leaflet Mapper
+    * [Leaflet Mapper](./wk5/leaflet.html)
 * **Lab 5**: ArcGIS Online Lab and Final Project Support
 
 <a name="proj"></a>
