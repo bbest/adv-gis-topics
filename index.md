@@ -97,8 +97,7 @@ See [**wk4** details](./wk4/).
 ### Week 5, Oct 31: Publshing Maps Online (Frew; Best; Wedding)
 
 * **Lecture 5**: Introduction to Online GIS
-    * ArcGIS Online
-    * WorldMap
+    * [KML & Google Earth](./wk5/KML.html)
     * Leaflet Mapper
 * **Lab 5**: ArcGIS Online Lab and Final Project Support
 
