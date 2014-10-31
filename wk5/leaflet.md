@@ -1,7 +1,7 @@
 ---
 layout: article
-title: "Creating Interactive Spatial Content Online Using Github and Leaflet"
-excerpt: "week 5"
+title: "Github and Leaflet"
+excerpt: "creating interactive spatial content online"
 image:
   feature:
   teaser:
@@ -21,24 +21,13 @@ In the world of conservation, engaging a broad range of stakeholders is often vi
 
 Goals:
 
-- Create GeoJSON files (using GDAL), which automatically get rendered with their own interactive map in Github. Do this for:
+- Create free public **website** using Github to house map.
 
-  - points
-  
-  - polygons  
+- Fetch point observations from GBIF and species distribution polygons from the USGS for our study "critter" the bristlecone pine.
 
-- Create free public website using Github.
+- Create **GeoJSON** files using the rgdal package. Github automatically renders these with a Leaflet map.
 
-- Create your own interactive map with multiple layers, combining:
-
-  - points
-  
-  - polygons
-  
-  - raster (as an image overlay)
-  
-  - background map of your choosing
-
+- Create your own interactive map combining multiple layers and customizing symbology to be embedded on your website.
 
 ## 1. Create Website
 
@@ -93,7 +82,7 @@ git push
 
 Let's continuing with our pet organism the bristlecone pine (_Pinus longaeva_). Download the species distribution shapefile from this website:
   
-  - [GECSC: Tree Species Distribution Maps for North America](http://esp.cr.usgs.gov/data/little/)
+  - [USGS GECSC: Tree Species Distribution Maps for North America](http://esp.cr.usgs.gov/data/little/)
 
 Unzip and create directories as needed so the shapefile and associated files live at this exact path:
 
@@ -251,7 +240,13 @@ This should produce the following interactive map after you commit and push:
 
 </script>
 
-Next, let's customize the symbology so the points are green tree markers and polygons are orange. We're using the [Leaflet.awesome-markers](https://github.com/lvoogdt/Leaflet.awesome-markers) which enables you to use any of the nifty icons from [Font-Awesome](http://fortawesome.github.io/Font-Awesome/icons/).
+Next, let's customize the symbology so the points are green tree markers and polygons are orange. 
+
+We're going to use the [Leaflet.awesome-markers](https://github.com/lvoogdt/Leaflet.awesome-markers) which enables you to use any of the nifty icons from [Font-Awesome](http://fortawesome.github.io/Font-Awesome/icons/). To use this library we need to download this [zip](https://github.com/lvoogdt/Leaflet.awesome-markers/archive/2.0/develop.zip) and move:
+
+
+
+
 
 Replace the lines above for adding geojson points and polygons with these:
 
@@ -330,7 +325,6 @@ ply.addTo(map2)
 
 TODO:
 
-- Symbology of points to a tree marker
 
 - Save https://raw.githubusercontent.com/calvinmetcalf/leaflet-ajax/master/dist/leaflet.ajax.min.js as `map/leaflet.ajax.min.js`.
 
