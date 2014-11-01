@@ -81,7 +81,7 @@ git push
 ## 3. Get polygons of bristlecone pine distribution
 
 Let's continuing with our pet organism the bristlecone pine (_Pinus longaeva_). Download the species distribution shapefile from this website:
-  
+
   - [USGS GECSC: Tree Species Distribution Maps for North America](http://esp.cr.usgs.gov/data/little/)
 
 Unzip and create directories as needed so the shapefile and associated files live at this exact path:
@@ -167,8 +167,8 @@ Then in the body of the HTML, replace the contents of whatever is in between the
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
 
-...    
- 
+...
+
       </section>
     </div>
 
@@ -182,8 +182,8 @@ And within the `...` above, insert the following:
 
 <script>
   // create Leaflet map object and set view's center and zoom level
-  var map = L.map('map').setView([38, -115], 7);        
-  
+  var map = L.map('map').setView([38, -115], 7);
+
   // add background map layer
   var Esri_NatGeoWorldMap = L.tileLayer(
     'http://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}');
@@ -193,8 +193,7 @@ And within the `...` above, insert the following:
 
 This should produce this interactive map:
 
-<link rel="stylesheet" href="/stylesheets/stylesheet.css">
-<link rel="stylesheet" href="/stylesheets/leaflet.awesome-markers.css">
+<link rel="stylesheet" href="./stylesheets/leaflet.awesome-markers.css">
 <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" >
 
@@ -207,8 +206,8 @@ This should produce this interactive map:
 
 <script>
   // create Leaflet map object and set view's center and zoom level
-  var map0 = L.map('map0').setView([38, -115], 7);        
-  
+  var map0 = L.map('map0').setView([38, -115], 7);
+
   // add background map layer
   var Esri_NatGeoWorldMap = L.tileLayer(
     'http://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}');
@@ -217,40 +216,40 @@ This should produce this interactive map:
 
 Next, add the following lines of code between `Esri_NatGeoWorldMap.addTo(map0)` and `</script>` to map the points and polygons:
 
-```html
+```javascript
 // add geojson of points
-var pts = new L.GeoJSON.AJAX('./pts_pinulong.geojson'); 
+var pts = new L.GeoJSON.AJAX('./pts_pinulong.geojson');
 pts.addTo(map)
 
 // add GeoJSON of points
-var ply = new L.GeoJSON.AJAX('./ply_pinulong.geojson'); 
+var ply = new L.GeoJSON.AJAX('./ply_pinulong.geojson');
 ply.addTo(map)
 ```
 
 This should produce the following interactive map after you commit and push:
 
-<div id="map" style="width: 600px; height: 400px"></div>
+<div id="map1" style="width: 600px; height: 400px"></div>
 <script>
 
   // add map
-	var map = L.map('map').setView([38, -115], 7);
-  
+	var map1 = L.map('map1').setView([38, -115], 7);
+
   // add basemap layer
   var Esri_NatGeoWorldMap = L.tileLayer(
     'http://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}');
-  Esri_NatGeoWorldMap.addTo(map)
-  
-  // add GeoJSON of points
-  var pts = new L.GeoJSON.AJAX('./pts_pinulong.geojson'); 
-  pts.addTo(map)
+  Esri_NatGeoWorldMap.addTo(map1)
 
   // add GeoJSON of points
-  var ply = new L.GeoJSON.AJAX('./ply_pinulong.geojson'); 
-  ply.addTo(map)
+  var pts = new L.GeoJSON.AJAX('./pts_pinulong.geojson');
+  pts.addTo(map1)
+
+  // add GeoJSON of points
+  var ply = new L.GeoJSON.AJAX('./ply_pinulong.geojson');
+  ply.addTo(map1)
 
 </script>
 
-Next, let's customize the symbology so the points are green tree markers and polygons are orange. 
+Next, let's customize the symbology so the points are green tree markers and polygons are orange.
 
 We're going to use the [Leaflet.awesome-markers](https://github.com/lvoogdt/Leaflet.awesome-markers) which enables you to use any of the nifty icons from [Font-Awesome](http://fortawesome.github.io/Font-Awesome/icons/). To use this library we need to add some files [zip](https://github.com/lvoogdt/Leaflet.awesome-markers/archive/2.0/develop.zip) prepped for you in this zip file you should download it to directly inside your H:\esm296-4f\USER.github.io folder:
 
@@ -260,7 +259,7 @@ Open it in 7-zip so you can see the files. Go ahead and right click on 7-zip > E
 
 Replace the lines you last added above in map/index.html with adding geojson points and polygons with these:
 
-```html
+```javascript
 // create tree marker
 var treeMarker = L.AwesomeMarkers.icon({
   icon: 'tree',
@@ -339,9 +338,9 @@ To add a link from your root site USER.github.io, let's add a link from the inde
 
 
 ```html
-      <h1>Welcome</h1>
-      
-      Check out my <strong><a href='./map'>map of bristlecone pine</a></strong>.
+<h1>Welcome</h1>
+
+Check out my <strong><a href='./map'>map of bristlecone pine</a></strong>.
 ```
 
 
