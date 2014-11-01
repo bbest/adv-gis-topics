@@ -251,13 +251,13 @@ This should produce the following interactive map after you commit and push:
 
 Next, let's customize the symbology so the points are green tree markers and polygons are orange.
 
-We're going to use the [Leaflet.awesome-markers](https://github.com/lvoogdt/Leaflet.awesome-markers) which enables you to use any of the nifty icons from [Font-Awesome](http://fortawesome.github.io/Font-Awesome/icons/). To use this library we need to add some files [zip](https://github.com/lvoogdt/Leaflet.awesome-markers/archive/2.0/develop.zip) prepped for you in this zip file you should download it to directly inside your H:\esm296-4f\USER.github.io folder:
+We're going to use the [Leaflet.awesome-markers](https://github.com/lvoogdt/Leaflet.awesome-markers) which enables you to use any of the nifty icons from [Font-Awesome](http://fortawesome.github.io/Font-Awesome/icons/). To use this library we need to add some files [zip](https://github.com/lvoogdt/Leaflet.awesome-markers/archive/2.0/develop.zip) prepped for you in this zip file you should download it to directly inside your `H:\esm296-4f\USER.github.io` folder:
 
 [Leaflet.awesome-markers_files.7z](https://purl.org/net/frew/ESM296/wk5/Leaflet.awesome-markers_files.7z)
 
 Open it in 7-zip so you can see the files. Go ahead and right click on 7-zip > Extract Here to place the files in the necessary folders.
 
-Replace the lines you last added above in map/index.html with adding geojson points and polygons with these:
+Replace the lines you last added above in map/index.html adding geojson points and polygons with these enanced versions:
 
 ```javascript
 // create tree marker
@@ -288,6 +288,8 @@ var ply = new L.GeoJSON.AJAX('./ply_pinulong.geojson', {
   "opacity": 0.65 });
 ply.addTo(map)
 ```
+
+This should produce the following interactive map after you commit and push:
 
 <div id="map2" style="width: 600px; height: 400px"></div>
 <script>
