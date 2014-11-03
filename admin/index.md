@@ -30,7 +30,9 @@ A consistent file management strategy will reduce confusion.
 
 ## File Management
 
-Recommended file management scheme for `H:\esm296-4f`. There's usually a **lab** for every week (**wk**) of class instruction and associated homework (**hw**) to turn in. While the # associated with a lab is always the same as the hw turned in, a lab could span more than one week so wk # could be offset.
+Here's a recommended file management scheme for `H:\esm296-4f`. There's usually a **lab** for every week (**wk**) of class instruction and associated homework (**hw**) to turn in. While the # associated with a lab is always the same as the hw turned in, a lab could span more than one week so wk # could be offset.
+
+Using different folder names for instructional materials (wk#), working lab materials (lab#) and final homework to turn in (hw#) helps you more easily track which is what and not accidentally use the wrong location.
 
 - **github**/ is the folder which points to your github repository at `https://github.com/USER/esm296-4f` where `USER` is your Github username.
 
