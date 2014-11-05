@@ -365,3 +365,5 @@ Check out my <strong><a href='./map'>map of bristlecone pine</a></strong>.
 - [Create a Leaflet map using QGIS: qgis2leaf plugin](http://zevross.com/blog/2014/08/05/it-is-incredibly-easy-to-create-a-leaflet-map-using-qgis/)
 
 - [GDAL Leaflet tile maker for rasters](http://www.gdal.org/gdal2tiles.html)
+
+- [Stream GeoJSON at Github directly into QGIS](http://blog.geomusings.com/2013/06/18/geojson-on-github-now-what/)
