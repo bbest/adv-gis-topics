@@ -50,7 +50,7 @@ toc: true
 
 - Marine
 
-    - [Bio-ORACLE](http://www.oracle.ugent.be), per [Tyberghein et al (2012)](http://onlinelibrary.wiley.com/doi/10.1111/j.1466-8238.2011.00656.x/full). Note: need to define projection as the Behrmann projected coordinate system.
+    - [Bio-ORACLE](http://www.oracle.ugent.be) per [Tyberghein et al (2012)](http://onlinelibrary.wiley.com/doi/10.1111/j.1466-8238.2011.00656.x/full). Note: need to define projection as the Behrmann projected coordinate system.
     
     - [SRTM30_PLUS DEM](http://topex.ucsd.edu/WWW_html/srtm30_plus.html) per [Becker et al (2009)](http://topex.ucsd.edu/sandwell/publications/124_MG_Becker.pdf)
 
