@@ -350,7 +350,7 @@ Check out my <strong><a href='./map'>map of bristlecone pine</a></strong>.
 
 - [GeoJSON.io](http://geojson.io) - powerful GeoJSON interface, allowing editing of features and tables directly from Github
 
-- [Leaflet Providers](leaflet-extras.github.io: Leaflet Providers) - copy & paste a whole slew of pretty background layers into your map, like Stamen.watercolor
+- [Leaflet Providers](http://leaflet-extras.github.io/leaflet-providers/preview/) - copy & paste a whole slew of pretty background layers into your map, like Stamen.watercolor
 
 - [Leaflet Tutorials](http://leafletjs.com/examples.html) - go deeper into Leaflet capabilities here
 
