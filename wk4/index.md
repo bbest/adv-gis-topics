@@ -52,13 +52,16 @@ toc: true
 
     - [Bio-ORACLE](http://www.oracle.ugent.be), per [Tyberghein et al (2011)](https://purl.org/net/frew/ESM296/wk4/refs/Tyberghein_etal_2012.pdf). Note: need to define projection as the Behrmann projected coordinate system.
     
-    - [SRTM30_PLUS DEM](http://topex.ucsd.edu/WWW_html/srtm30_plus.html)
+    - [SRTM30_PLUS DEM](http://topex.ucsd.edu/WWW_html/srtm30_plus.html) per [Becker et al (2009)](http://topex.ucsd.edu/sandwell/publications/124_MG_Becker.pdf)
 
 - General
 
     - [WorldGrids](http://worldgrids.org/doku.php)
 
 ## References
+
+- Becker JJ, DT Sandwell, WHF Smith, J Braud, B Binder, J Depner, … P Weatherall (2009). [Global Bathymetry and Elevation Data at 30 Arc Seconds Resolution: SRTM30_PLUS](http://topex.ucsd.edu/sandwell/publications/124_MG_Becker.pdf). _Marine Geodesy_, 32(4): 355–371.
+
 
 - Elith J, & JR Leathwick (2009) [Species Distribution Models: Ecological Explanation and Prediction Across Space and Time](https://purl.org/net/frew/ESM296/wk4/refs/Elith_Leathwick_2009.pdf). _Annual Review of Ecology, Evolution, and Systematics_, 40(1):677–697.
 
@@ -69,7 +72,6 @@ toc: true
 - Roberts JJ, BD Best, DC Dunn, EA Treml, & PN Halpin (2010) [Marine Geospatial Ecology Tools: An integrated framework for ecological geoprocessing with ArcGIS, Python, R, MATLAB, and C++](https://purl.org/net/frew/ESM296/wk4/refs/Roberts_etal_2010.pdf). _Environmental Modelling & Software_, 25(10):1197–1207.
 
 - Robinson N, J Regetz, RP Guralnick (2014). [EarthEnv-DEM90: A nearly-global, void-free, multi-scale smoothed, 90m digital elevation model from fused ASTER and SRTM data](http://www.sciencedirect.com/science/article/pii/S0924271613002360). _ISPRS Journal of Photogrammetry and Remote Sensing_, 87: 57–67.
-
 
 - Tuanmu MN, & W Jetz (2014) [A global 1-km consensus land-cover product for biodiversity and ecosystem modelling](http://onlinelibrary.wiley.com/doi/10.1111/geb.12182/abstract). _Global Ecology and Biogeography_, 23(9):1031–1045.
 
