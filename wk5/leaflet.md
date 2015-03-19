@@ -238,7 +238,7 @@ This should produce the following interactive map after you commit and push:
 
   // add basemap layer
   var Esri_NatGeoWorldMap = L.tileLayer(
-    'http://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}');
+    'http://server.arcgisonline.com/ArcGIS/rest/services/Ocean_Basemap/MapServer/tile/{z}/{y}/{x}');
   Esri_NatGeoWorldMap.addTo(map1)
 
   // add GeoJSON of points
