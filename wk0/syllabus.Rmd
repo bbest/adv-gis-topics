@@ -61,7 +61,7 @@ The **5 lab assignments** (10 points each) are due 8 am the Wednesday following 
 - **Lecture**: introduction to species distribution modeling and applications with MGET (Marine Geospatial Ecology Tools)
 - **Lab**: species distribution modeling with MGET. Students will choose a unique species of interest drawing observation data from the Global Biodiversity Information Facility (GBIF).
 
-### Week 5, Dec 4: Publshing Maps Online, Leaflet and StoryMaps Lab
+### Week 5, Dec 4: Publishing Maps Online, Leaflet and StoryMaps Lab
 
 - **Lecture**: introduction to online mapping using Google Earth (KML), Javascript (Leaflet), and ArcGIS Online (StoryMaps)
 - **Lab**: publishing spatial content using R leaflet package, and ESRI StoryMaps. Students will be able to choose spatial content from any of the prior labs.
