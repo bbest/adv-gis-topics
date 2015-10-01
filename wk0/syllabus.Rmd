@@ -1,7 +1,7 @@
 ---
 title: 'ESM 296-4f: Advanced GIS, Fall 2015'
 author: "Ben Best & Lisa Wedding"
-date: "Aug 14, 2015"
+date: "Oct 1, 2015"
 output:
   pdf_document:
     toc: yes
@@ -16,7 +16,7 @@ output:
 
 - Instructors:
 
-  - [Ben Best](http://bdbest.org) (bdbest@gmail.com)
+  - [Ben Best](http://bdbest.org) (bdbest@gmail.com), Bren Rm 4524
 
   - [Lisa Wedding](http://www.centerforoceansolutions.org/team/lisa-wedding) (lwedding@stanford.edu)
 
@@ -40,26 +40,26 @@ The **5 lab assignments** (10 points each) are due 8 am the Wednesday following 
 
 ## Course Outline
 
-### Week 1, Oct 30: Advanced Model Builder, Wind Energy Lab
+### Week 1, Oct 30: Species Distribution Modeling, MGET Lab
+
+- **Lecture**: introduction to species distribution modeling and applications with MGET (Marine Geospatial Ecology Tools)
+- **Lab**: species distribution modeling with MGET. Students will choose a unique species of interest drawing observation data from the Global Biodiversity Information Facility (GBIF).
+
+### Week 2, Nov 6: Advanced Model Builder, Wind Energy Lab
 
 - **Lecture**: course's weekly topics, grading, and setup for the following week's drone mapping
 - **Lab**: variable assignment and iteration in ArcGIS ModelBuilder to loop over a time series of national wind energy data
 
-### Week 2, Nov 6: Python Programming, Drone Mapping Lab
+### Week 3, Nov 13: Python Programming, Drone Mapping Lab
 
 - **Field**: collect aerial imagery around campus using a drone. Students will be strategically placed with GPS enabled smartphones to later use as georectification control points
 - **Lecture**: introduction to Python programming with ArcGIS and open-source libraries, georectification
 - **Lab**: georectification and classification of drone imagery. Students will georectify a unique image and use Python to load all student images into a photo mosaic.
 
-### Week 3, Nov 13: Ecosystem Services, InVEST Lab
+### Week 4, Nov 20: Ecosystem Services, InVEST Lab
 
 - **Lecture**: introduction to ecosystem service evaluation theory and practice using InVEST (Integrated Valuation of Environmental Services and Tradeoffs)
 - **Lab**: coastal vulnerability modeling with InVEST
-
-### Week 4, Nov 20: Species Distribution Modeling, MGET Lab
-
-- **Lecture**: introduction to species distribution modeling and applications with MGET (Marine Geospatial Ecology Tools)
-- **Lab**: species distribution modeling with MGET. Students will choose a unique species of interest drawing observation data from the Global Biodiversity Information Facility (GBIF).
 
 ### Week 5, Dec 4: Publishing Maps Online, Leaflet and StoryMaps Lab
 
